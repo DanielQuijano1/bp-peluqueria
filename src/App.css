@@ -9,8 +9,8 @@
   --pink-text-color: #f37277;
 
 
-  --main-text-color: #474646;
-  --gray-text-color-dark: #4e4c4ca9;
+  --main-text-color: #313131;
+  --gray-text-color-dark: #4e4c4c;
   --gray-bg-color: #afadad;
   --gray-text-color-sky: #605c5c;
 }
@@ -22,6 +22,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-behavior: smooth;
+  transition: .5s;
 }
 
 /* ======== ALL ===========*/
@@ -53,28 +55,43 @@
   background-color: var(--pink-text-color);
 }
 
-.textoRosaOscuro{
+.textoRosaOscuro {
   color: var(--pink-text-color);
 }
 
-.textoCentrado{
+.textoCentrado {
   text-align: center;
 }
 
-.animacionActive:active{
+.animacionActive:active {
   transition: .2s;
   scale: .96;
 }
 
-.animacionHover:hover{
+.animacionHover:hover {
   cursor: pointer;
 }
 
-.espaciadoVH{
+.espaciadoVH {
   margin: 13vh 0;
 }
 
 /* ======== NavBar ===========*/
+.imgFondo {
+  background-image: url(../src/assets/chica-pelu_baja_edit.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5) inset;
+}
+
+.navbar__arreglo {
+  width: 1000px;
+}
+
 .navbar__Flex {
   max-width: 1000px;
   min-height: 100vh;
@@ -89,6 +106,20 @@
   justify-content: space-around;
   margin-top: 3vh;
   width: 900px;
+  border-radius: 10px;
+  position: fixed;
+  top: 2vh;
+  transition: 1s;
+}
+
+.background_title {
+  background-color: #fdf0f12d;
+  box-shadow: 0 0 10px  #605c5c6c;
+}
+
+.background_titleOscuro {
+  background-color: #424242e3;
+  box-shadow: 0 0 10px  #605c5cd7;
 }
 
 .navbar__title {
@@ -98,8 +129,39 @@
   display: grid;
   place-content: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: 300;
+  color: black;
+  position: relative;
+  top: -5px;
+}
+
+.shadowText {
+  text-shadow: #fdf0f1 0px 0 10px;
+}
+
+.navbar__title::after {
+  content: "HAIR + LOUNGE";
+  font-family: 'Times New Roman', Times, serif;
+  font-size: .3em;
+  font-weight: 300;
+  letter-spacing: .6em;
+  color: #ed1f27;
+  position: absolute;
+  bottom: -8px;
+  left: 10px;
+}
+
+.navbar__title::before {
+  content: "ECO FRIENDLY";
+  font-family: 'Times New Roman', Times, serif;
+  color: darkgreen;
+  font-size: .2em;
+  font-weight: 500;
+  letter-spacing: .35em;
+  position: absolute;
+  top: 12px;
+  right: 14px;
 }
 
 .navbar__title:active {
@@ -110,7 +172,6 @@
   display: flex;
   gap: 2em;
   font-family: 'Manrope', sans-serif;
-  color: var(--main-text-color);
 }
 
 .navbar__ul--list li {
@@ -135,10 +196,11 @@
   background-color: var(--red-text-color);
 }
 
-.navbar__img-text-conainer{
+.navbar__img-text-conainer {
   display: flex;
   flex-direction: row;
 }
+
 
 .textIntro {
   margin-bottom: 10vh;
@@ -181,37 +243,95 @@
   bottom: 10vh;
   right: 0;
   background-image: url(../src/assets/stock-photo-blonde-girl-elegant-shiny-hairstyle.jpg);
-  mix-blend-mode:multiply;
+  mix-blend-mode: multiply;
   background-size: cover;
   box-shadow: #f37277;
 }
 
 /* ======== Main ===========*/
-.main__flex{
+.main__flex {
   width: 1000px;
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: var(--main-bg-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.main__flex--interior{
+.main__flex--interior {
   flex-direction: column;
 }
 
-.main__flex--services{
+.main__flex--services {
   flex-direction: column;
+
 }
 
-.main__flexCards{
+.main__flexCards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.main__card{
+.main__card {
   max-width: 20vw;
   text-align: center;
 }
+
+.card__img {
+  width: 200px;
+  height: 200px;
+}
+
+.main__flex--img1 {
+  display: flex;
+  flex-direction: row;
+  background-color: #605c5c;
+  height: 25vw;
+  width: 100vw;
+}
+
+.main__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: calc(100% - 50%);
+  height: 100%;
+}
+
+.img1 {
+  background-image: url(../src/assets/peluquero-tijeras-peine-cabello_23-2148298336.jpg)
+}
+
+.img2 {
+  background-image: url(../src/assets/13528568_1752697558322286_1847042502262912847_o.jpg);
+}
+
+.textoImg {
+  width: calc(100% - 50%);
+  padding: 0px 20px;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card1{
+  background-image: url(../src/assets/cabello.png);
+}
+
+.card2 {
+  background-image: url(../src/assets/pedicure.png);
+}
+
+.card3{
+  background-image: url(../src/assets/manicura.png);
+}
+
 /* ======== Footer ===========*/
