@@ -31,7 +31,7 @@ function Navbar() {
                             </ul>
                         </div>
                     </div>
-
+                    
                     <div className="navbar__arreglo"></div>
 
                     <div className="navbar__img-text-conainer">

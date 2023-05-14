@@ -114,12 +114,12 @@
 
 .background_title {
   background-color: #fdf0f12d;
-  box-shadow: 0 0 10px  #605c5c6c;
+  box-shadow: 0 0 10px #605c5c6c;
 }
 
 .background_titleOscuro {
   background-color: #424242e3;
-  box-shadow: 0 0 10px  #605c5cd7;
+  box-shadow: 0 0 10px #605c5cd7;
 }
 
 .navbar__title {
@@ -248,6 +248,53 @@
   box-shadow: #f37277;
 }
 
+/* ======== Popup ==========*/
+
+.popup__box {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: #31313167;
+  border-radius: 30px;
+}
+
+.popup__icon {
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.popup__icon:hover {
+  scale: 1.05;
+}
+
+.popup__icon:active {
+  scale: .95;
+}
+
+.tel {
+  background-image: url(../src/assets/call.png);
+}
+
+.whatsapp {
+  background-image: url(../src/assets/whatsapp.png);
+}
+
+.instagram {
+  background-image: url(../src/assets/instagram.png);
+}
+
+.facebook {
+  background-image: url(../src/assets/facebook.png);
+}
+
 /* ======== Main ===========*/
 .main__flex {
   width: 1000px;
@@ -322,7 +369,7 @@
   background-position: center center;
 }
 
-.card1{
+.card1 {
   background-image: url(../src/assets/cabello.png);
 }
 
@@ -330,7 +377,7 @@
   background-image: url(../src/assets/pedicure.png);
 }
 
-.card3{
+.card3 {
   background-image: url(../src/assets/manicura.png);
 }
 
