@@ -24,6 +24,7 @@
   align-items: center;
   scroll-behavior: smooth;
   transition: .5s;
+  text-wrap: wrap;
 }
 
 /* ======== ALL ===========*/
@@ -382,3 +383,15 @@
 }
 
 /* ======== Footer ===========*/
+
+.footer__box {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+.footer__marcaDeAgua {
+  padding: 10px 0px;
+  border-top: 1px solid #afadad81;
+  width: 100vw;
+}
