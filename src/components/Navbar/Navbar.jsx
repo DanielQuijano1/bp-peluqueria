@@ -31,7 +31,7 @@ function Navbar() {
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div className="navbar__arreglo"></div>
 
                     <div className="navbar__img-text-conainer">
@@ -39,7 +39,7 @@ function Navbar() {
                         <div className="textIntro">
                             <div className="textIntro__title textoGrisOscuro">La Belleza de lo Natural</div>
                             <p className="textIntro__p textoGrisMedio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi consectetur cum blanditiis cupiditate, nemo consequatur qui numquam iste ea culpa quae.</p>
-                            <div className="button textoRosaClaro fondoRosaOscuro ">Reserva Tu Turno</div>
+                            <a href="https://www.google.com/maps/reserve/v/default?m=ZuYZ98OLOGI&source=pa&gei=C0NiZKqrL7Cj1sQPkLuKyAc&sourceurl=https://www.google.com/search?q%3Dbeauty%2Bport%2Bpeluqueria%26oq%3Dbeauty%2Bport%2Bpeluqueria%26aqs%3Dchrome..69i57.5819j0j1%26sourceid%3Dchrome%26ie%3DUTF-8&hl=es-419" target="blank"><div className="button textoRosaClaro fondoRosaOscuro ">Reserva Tu Turno</div></a>
                         </div>
 
                     </div>
