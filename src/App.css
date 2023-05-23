@@ -18,7 +18,11 @@
   --gray-text-color-sky: #605c5c;
 }
 
-/* ======== ALL ===========*/
+/* =============================================== 
+
+--------------------- ALL ------------------------
+
+=================================================*/
 .html {
   width: 100vw;
   background-color: var(--main-bg-color);
@@ -29,7 +33,6 @@
   transition: .5s;
 }
 
-/* ======== ALL ===========*/
 .textoGrisOscuro {
   color: var(--main-text-color);
 }
@@ -75,7 +78,7 @@
   scale: .96;
 }
 
-.animacionActive{
+.animacionActive {
   transition: .3s;
   scale: 1;
 }
@@ -104,7 +107,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.fontOswald{
+.fontOswald {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -116,10 +119,15 @@
   font-weight: 500;
 }
 
-.textUnderline{
+.textUnderline {
   text-decoration: underline;
 }
-/* ======== NavBar ===========*/
+
+/* =============================================== 
+
+--------------------- NAVBAR ---------------------
+
+=================================================*/
 .imgFondo {
   background-image: url(../src/assets/chica-pelu_baja_edit.jpg);
   background-size: cover;
@@ -339,9 +347,13 @@
   background-image: url(../src/assets/facebook.png);
 }
 
-/* ======== Main ===========*/
+/* =============================================== 
+
+--------------------- MAIN -----------------------
+
+=================================================*/
 .main__flex {
-  width: 1000px;
+  width: 100vw;
   min-height: 50vh;
   background-color: var(--main-bg-color);
   display: flex;
@@ -405,6 +417,11 @@
   place-content: center;
 }
 
+.widthYheigth100 {
+  width: 100%;
+  height: 100%;
+}
+
 .cardImage {
   width: 100%;
   height: 100px;
@@ -462,7 +479,12 @@
   height: 40px;
 }
 
-/* ======== Footer ===========*/
+
+/* =============================================== 
+
+--------------------- FOOTER ---------------------
+
+=================================================*/
 
 .footer__box {
   display: flex;
@@ -533,4 +555,79 @@
 
 .marcasTexto {
   font-weight: 400;
+}
+
+
+
+
+
+/* =============================================== 
+
+---------------- MEDIA QUERIES -------------------
+
+================================================*/
+
+@media screen and (max-width: 767px) {
+
+  /* --------------------------
+..........navbar............
+----------------------------*/
+.navbar__titleFlex{
+}
+
+.textIntro a{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  place-content: center;
+  padding: 10px 0;
+}
+
+/* --------------------------
+..........main............
+----------------------------*/
+.main__flex--img1{
+  display: block;
+}
+
+.main__img{
+  width: 100vw;
+  height: 100%;
+}
+
+.textoImg{
+  width: 90vw;
+  padding: 20px 0px;
+}
+
+/*  ---  servicios ---  */
+.flex__marcas{
+  width: 90vw;
+}
+
+/* --------------------------
+..........footer............
+----------------------------*/
+.arreglosTitle:after{
+  right: 35px;
+}
+
+.footer_boxContent{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.footer__box{
+  display: block;
+}
+
+.footer__box--redes{
+  width:50vw;
+  margin: auto;
+}
 }
