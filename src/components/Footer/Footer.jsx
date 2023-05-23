@@ -17,7 +17,7 @@ function Footer() {
                     <h4 className="textoCentrado espaciadoRedesTop letterSpacing textUnderline">SÍGUENOS</h4>
                     <p className="textoCentrado espaciadoRedes letterSpacing">nuestras redes sociales</p>
                     <div className="footer__box--redes">
-                        <a href="" target="blank"><div className="popup__icon whatsapp__black animacionActive filter__opacity" /></a>
+                        <a href="https://wa.me/+5491134431280" target="blank"><div className="popup__icon whatsapp__black animacionActive filter__opacity" /></a>
                         <a href="https://www.instagram.com/beautyportpeluqueria/?hl=es" target="blank"><div className="popup__icon instagram__black animacionActive filter__opacity" /></a>
                         <a href="https://www.facebook.com/beautyportoficial/?locale=es_LA" target="blank"><div className="popup__icon facebook__black animacionActive filter__opacity" /></a>
                     </div>
