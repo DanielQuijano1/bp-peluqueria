@@ -573,6 +573,7 @@
 ..........navbar............
 ----------------------------*/
 .navbar__titleFlex{
+  z-index: 100;
 }
 
 .textIntro a{
@@ -629,5 +630,9 @@
 .footer__box--redes{
   width:50vw;
   margin: auto;
+}
+
+.textoMarcaDeAgua{
+  padding-bottom: 60px;
 }
 }
