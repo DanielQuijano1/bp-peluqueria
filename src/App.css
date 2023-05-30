@@ -605,16 +605,11 @@
 
 
   .navegadorDropdown {
-    /* Para ponerlo arriba la derecha
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  */
     width: 60px;
     height: 60px;
     right: 0;
     background: transparent;
-    /*para ponerlo bien en el recuadro*/
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
     display: flex;
     transition-delay: 0s, .75s;
     overflow: hidden;
