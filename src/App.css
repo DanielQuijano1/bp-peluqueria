@@ -589,6 +589,109 @@
   padding: 10px 0;
 }
 
+
+.navbar__titleFlexMovil{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.navegadorDropdown {
+  /* Para ponerlo arriba la derecha
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  */
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  /*para ponerlo bien en el recuadro*/
+  
+  display: flex;
+  transition: height .5s, width .5s;
+  transition-delay: 0s, .75s;
+  overflow: hidden;
+}
+
+.navegadorDropdown.active {
+  width: 300px;
+  right: 50px;
+  height: 400px;
+  transition: width .5s, height .5s;
+  transition-delay: 0s, .75s;
+  
+}
+
+.navegadorDropdown .menuDropdown {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegadorDropdown .menuDropdown::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background: #555;
+  transform: translateY(-10px);
+  box-shadow: 0 10px #555;
+  transition: .5s;
+}
+
+.navegadorDropdown .menuDropdown::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background: #555;
+  transform: translateY(10px);
+  transition: .5s;
+}
+
+.navegadorDropdown.active .menuDropdown::before {
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: 0 0 #555;
+}
+
+.navegadorDropdown.active .menuDropdown::after {
+  transform: translateY(0px) rotate(-45deg);
+  box-shadow: 0 0 #555;
+}
+
+.menuDropdownNavegador2 {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  background-color: #fff;
+}
+
+.menuDropdownNavegador2 a {
+  list-style: none;
+}
+
+.menuDropdownNavegador2  a li{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 1em;
+  gap: 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+
 /* --------------------------
 ..........main............
 ----------------------------*/

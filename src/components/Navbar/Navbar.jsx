@@ -1,6 +1,6 @@
 import { Balancer } from "react-wrap-balancer";
 import "../../App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar() {
 
@@ -16,23 +16,56 @@ function Navbar() {
 
     window.addEventListener('scroll', changeBackground)
 
+
+
+    const [windowsSize, setWindowsSize] = useState([window.innerWidth])
+
+    useEffect(() => {
+        const handleWindowsResize = () => {
+            setWindowsSize([window.innerWidth]);
+        };
+
+        window.addEventListener('resize', handleWindowsResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowsResize);
+        };
+    });
+
     return (
         <>
             <div className="imgFondo">
                 <div className="navbar__Flex" id="Inicio">
+                    {windowsSize > 700 ?
 
-                    <div className={navBar ? 'navbar__titleFlex background_titleOscuro' : 'navbar__titleFlex background_title'}>
-                        <a href="/"><div className={navBar ? 'navbar__title shadowText' : 'navbar__title'}>beauty port</div></a>
-                        <div className="navbar__ul">
-                            <ul className="navbar__ul--list ">
-                                <a href="#Inicio" ><li className="textoRosaClaro letterSpacing animacionActive"> Inicio</li></a>
-                                <a href="#SobreNosotros" ><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></a>
-                                <a href="#Servicios" ><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></a>
-                                <a href="#Contacto" ><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></a>
-                            </ul>
+                        <div className={navBar ? 'navbar__titleFlex background_titleOscuro' : 'navbar__titleFlex background_title'}>
+                            <a href="#"><div className={navBar ? 'navbar__title shadowText' : 'navbar__title'}>beauty port</div></a>
+                            <div className="navbar__ul">
+                                <ul className="navbar__ul--list ">
+                                    <a href="#Inicio" ><li className="textoRosaClaro letterSpacing animacionActive"> Inicio</li></a>
+                                    <a href="#SobreNosotros" ><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></a>
+                                    <a href="#Servicios" ><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></a>
+                                    <a href="#Contacto" ><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></a>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
+                        :
+
+                        <div className="navbar__titleFlexMovil">
+                            <a href="#"><div className="navbar__title">beauty port</div></a>
+                            <div className="navegadorDropdown">
+                                <div className="menuDropdown"/>
+                                <ul className="menuDropdownNavegador2">
+                                    <a href="#Inicio" ><li className="textoRosaClaro letterSpacing animacionActive"> Inicio</li></a>
+                                    <a href="#SobreNosotros" ><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></a>
+                                    <a href="#Servicios" ><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></a>
+                                    <a href="#Contacto" ><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></a>
+                                </ul>
+                            </div>
+                        </div>
+
+                    }
                     <div className="navbar__arreglo"></div>
 
                     <div className="navbar__img-text-conainer">
