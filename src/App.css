@@ -716,12 +716,17 @@
     justify-content: space-between;
   }
   
+  .navbar__arreglo{
+    width: 0;
+    height: 0;
+  }
   
-
   .navbar__img-text-conainer{
     width: 90vw;
-    position: relative;
+    height: 100vh;
     left: 5vh;
+    display: grid;
+    place-content: center;
   }
   
   .textIntro{
