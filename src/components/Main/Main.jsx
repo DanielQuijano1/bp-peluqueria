@@ -16,12 +16,15 @@ function Main() {
                 <div className="textoImg"><Balancer className="widthYheigth100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium qui consequuntur quo nisi, natus recusandae autem molestias sunt unde. Quibusdam beatae officia sapiente vero quos! Numquam fugiat sit ullam unde?</Balancer></div>
             </div>
 
-        <br />
+            <br />
 
             <div className="main__flex--img1">
                 <div className="textoImg"><Balancer className="widthYheigth100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, a eos quis consequuntur vel dolorem repellat minus nulla asperiores sequi saepe unde qui quae ab. Atque mollitia consequatur vero error.</Balancer></div>
                 <div className="main__img img2"></div>
             </div>
+
+            
+
         </>
     )
 }

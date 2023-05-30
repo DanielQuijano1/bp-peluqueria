@@ -32,6 +32,9 @@ function Navbar() {
         };
     });
 
+    const [open, setOpen] = useState(false);
+
+
     return (
         <>
             <div className="imgFondo">
@@ -55,8 +58,8 @@ function Navbar() {
                         <div className="navbar__titleFlexMovil">
                             <a href="#"><div className="navbar__title">beauty port</div></a>
                             <div className="navegadorDropdown">
-                                <div className="menuDropdown"/>
-                                <ul className="menuDropdownNavegador2">
+                                <div onClick={() => {setOpen(!open)}} className={`menuDropdown ${open? 'active' : ''}`}/>
+                                <ul className={`menuDropdownNavegador2 ${open? 'active' : 'inactive'}`}>
                                     <a href="#Inicio" ><li className="textoRosaClaro letterSpacing animacionActive"> Inicio</li></a>
                                     <a href="#SobreNosotros" ><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></a>
                                     <a href="#Servicios" ><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></a>
