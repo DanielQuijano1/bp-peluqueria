@@ -56,7 +56,7 @@ function Navbar() {
                         :
 
                         <div className="navbar__titleFlexMovil">
-                            <a href="#"><div className="navbar__title">beauty port</div></a>
+                            <a href="#"><div className="navbar__title arregloTitleMovil">beauty port</div></a>
                             <div className="navegadorDropdown">
                                 <div onClick={() => {setOpen(!open)}} className={`menuDropdown ${open? 'active' : ''}`}/>
                                 <ul className={`menuDropdownNavegador2 ${open? 'active' : 'inactive'}`}>

@@ -593,14 +593,16 @@
   .navbar__titleFlexMovil {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: calc(100vw - 10px);
     position: fixed;
     top: 0;
     left: 0;
+    padding-left: 10px;
     background: #fff;
     justify-content: space-between;
     z-index: 100;
   }
+
 
   .navegadorDropdown {
     /* Para ponerlo arriba la derecha
@@ -636,7 +638,7 @@
     align-items: center;
   }
 
-  .menuDropdown::before  {
+  .menuDropdown::before {
     content: "";
     position: absolute;
     width: 32px;
@@ -647,7 +649,7 @@
     transition: .5s;
   }
 
-  .menuDropdown::after  {
+  .menuDropdown::after {
     content: "";
     position: absolute;
     width: 32px;
