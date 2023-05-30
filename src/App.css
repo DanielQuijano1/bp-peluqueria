@@ -589,6 +589,9 @@
     padding: 10px 0;
   }
 
+  .fondoRosaOscuro{
+    background-color: #ed1f27;
+  }
 
   .navbar__titleFlexMovil {
     display: flex;
