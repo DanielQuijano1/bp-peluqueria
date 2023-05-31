@@ -1,6 +1,6 @@
 import { Balancer } from "react-wrap-balancer";
 import "../../App.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Navbar() {
 
@@ -34,6 +34,19 @@ function Navbar() {
 
     const [open, setOpen] = useState(false);
 
+    let menuRef = useRef();
+
+    useEffect(() => {
+        let handler = (e) => {
+            if (!menuRef.current.contains(e.target)) {
+                setOpen(false)
+            }
+        }
+        document.addEventListener("mousedown", handler)
+        return () => {
+            document.removeEventListener("mousedown", handler)
+        }
+    })
 
     return (
         <>
@@ -57,9 +70,9 @@ function Navbar() {
 
                         <div className="navbar__titleFlexMovil">
                             <a href="#"><div className="navbar__title arregloTitleMovil">beauty port</div></a>
-                            <div className="navegadorDropdown">
-                                <div onClick={() => {setOpen(!open)}} className={`menuDropdown ${open? 'active' : ''}`}/>
-                                <ul className={`menuDropdownNavegador2 ${open? 'active' : 'inactive'}`}>
+                            <div className="navegadorDropdown" ref={menuRef}>
+                                <div onClick={() => { setOpen(!open) }} className={`menuDropdown ${open ? 'active' : ''}`} />
+                                <ul className={`menuDropdownNavegador2 ${open ? 'active' : 'inactive'}`}>
                                     <a href="#Inicio" ><li className="textoRosaClaro letterSpacing animacionActive"> Inicio</li></a>
                                     <a href="#SobreNosotros" ><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></a>
                                     <a href="#Servicios" ><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></a>
