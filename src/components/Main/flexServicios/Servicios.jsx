@@ -34,7 +34,7 @@ function Servicios() {
             <section className="main__flex--services espaciadoVH" >
                 <h1 className="textIntro__title fontMontserrat textoCentrado textoGrisOscuro letterSpacing" id="Servicios"><Balancer className="fontOswald fontWeight400"> Nuestros Servicios</Balancer></h1>
 
-                <Carousel className='flexCarrusel' responsive={responsive} infinite={true} autoPlaySpeed={500}>
+                <Carousel className='flexCarrusel' responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}>
                     <Card title="Peinados" className="cardImage letterSpacing card1" />
                     <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
                     <Card title="Manicura" className="cardImage letterSpacing card3" />
