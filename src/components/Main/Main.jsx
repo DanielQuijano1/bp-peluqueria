@@ -23,8 +23,6 @@ function Main() {
                 <div className="main__img img2"></div>
             </div>
 
-            
-
         </>
     )
 }

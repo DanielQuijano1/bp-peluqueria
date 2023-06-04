@@ -378,7 +378,7 @@
 }
 
 .main__card {
-  max-width: 20vw;
+  width: 200px;
   text-align: center;
 }
 
@@ -590,7 +590,7 @@
     padding: 10px 0;
   }
 
-  .fondoRosaOscuro{
+  .fondoRosaOscuro {
     background-color: #ed1f27;
   }
 
@@ -627,8 +627,8 @@
 
   .menuDropdown {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 8c4445160px;
+    height: 8c4445160px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -676,7 +676,6 @@
     border-top: 1px solid rgba(0, 0, 0, .1);
     background-color: #fff;
     box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
-
   }
 
   .menuDropdownNavegador2 a {
@@ -714,21 +713,21 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  
-  .navbar__arreglo{
+
+  .navbar__arreglo {
     width: 0;
     height: 0;
   }
-  
-  .navbar__img-text-conainer{
+
+  .navbar__img-text-conainer {
     width: 90vw;
     height: 100vh;
     left: 5vh;
     display: grid;
     place-content: center;
   }
-  
-  .textIntro{
+
+  .textIntro {
     max-width: 100%;
     display: grid;
     place-content: center;
@@ -781,4 +780,18 @@
   .textoMarcaDeAgua {
     padding-bottom: 60px;
   }
+
+  .main__card{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.flexCarrusel{
+  width: 90vw;
+  height: 300px;
 }
