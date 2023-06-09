@@ -38,9 +38,6 @@ function Servicios() {
                     <Card title="Peinados" className="cardImage letterSpacing card1" />
                     <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
                     <Card title="Manicura" className="cardImage letterSpacing card3" />
-                    <Card title="Peinados" className="cardImage letterSpacing card1" />
-                    <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
-                    <Card title="Manicura" className="cardImage letterSpacing card3" />
                 </Carousel>;
 
             </section>
