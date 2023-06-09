@@ -744,12 +744,12 @@
 ----------------------------*/
   .main_flexPhotos {
     flex-direction: column;
-    height: 100vw;
+    height: 120vw;
   }
 
   .main__img {
     width: 100vw;
-    height: 80vw;
+    height: 100vw;
   }
 
   .textoImg {
