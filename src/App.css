@@ -429,6 +429,10 @@
   height: 100%;
 }
 
+.flexCarrusel {
+  max-width: 900px;
+}
+
 .cardImage {
   width: 100%;
   height: 100px;
