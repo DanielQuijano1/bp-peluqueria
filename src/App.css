@@ -431,6 +431,7 @@
 
 .flexCarrusel {
   max-width: 900px;
+  justify-content: space-evenly;
 }
 
 .cardImage {
