@@ -387,7 +387,13 @@
   height: 200px;
 }
 
-.main__flex--img1 {
+.main_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main_flexPhotos {
   display: flex;
   flex-direction: row;
   background-color: #605c5c;
@@ -736,18 +742,19 @@
   /* --------------------------
 ..........main............
 ----------------------------*/
-  .main__flex--img1 {
-    display: block;
+  .main_flexPhotos {
+    flex-direction: column;
+    height: 100vw;
   }
 
   .main__img {
     width: 100vw;
-    height: 100%;
+    height: 50vw;
   }
 
   .textoImg {
     width: 90vw;
-    padding: 20px 0px;
+    height: 50vw;
   }
 
   /*  ---  servicios ---  */
@@ -780,7 +787,7 @@
     padding-bottom: 60px;
   }
 
-  .main__card{
+  .main__card {
     width: 100%;
   }
 }
@@ -790,7 +797,7 @@
 
 
 
-.flexCarrusel{
+.flexCarrusel {
   width: 90vw;
   height: 300px;
   z-index: 10;
