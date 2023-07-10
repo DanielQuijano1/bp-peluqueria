@@ -790,6 +790,7 @@
     -webkit-transform: none;
     transform: none;
     z-index: 1000;
+    border-radius: 0;
   }
 
 
