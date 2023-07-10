@@ -370,7 +370,7 @@
 .scs-floating-button {
   top: 35vh;
   left: -2em;
-  border-radius: 30px;
+  border-radius: 50px;
   display: flex;
   align-content: end;
   justify-content: center;
@@ -781,10 +781,11 @@
   }
 
   .scs-floating-button {
+    width: 100vw;
     position: fixed;
-    top: 90vh;
+    top: unset;
     bottom: 0;
-    left: 35%;
+    left: 0;
     right: auto;
     -webkit-transform: none;
     transform: none;
