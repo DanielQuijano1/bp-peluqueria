@@ -1,10 +1,10 @@
 import './App.css'
 import { BrowserRouter } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
-import Servicios from './components/Main/flexServicios/Servicios';
-import Popup from './components/Navbar/Popup/Popup'
+import Navbar from './components/Navbar/Navbar.jsx'
+import Main from './components/Main/Main.jsx'
+import Footer from './components/Footer/Footer.jsx'
+import Servicios from './components/Main/flexServicios/Servicios.jsx';
+import Popup from './components/Navbar/Popup/Popup.jsx'
 import { Provider } from 'react-wrap-balancer'
 
 function App() {

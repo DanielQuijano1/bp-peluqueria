@@ -31,28 +31,15 @@ const responsive = {
 function Servicios() {
     return (
         <>
-            <section className="main__flex--services espaciadoVH" >
-                <h1 className="textIntro__title fontMontserrat textoCentrado textoGrisOscuro letterSpacing" id="Servicios"><Balancer className="fontOswald fontWeight400"> Nuestros Servicios</Balancer></h1>
-
-                <Carousel className='flexCarrusel' responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000}>
-                    <Card title="Peinados" className="cardImage letterSpacing card1" />
-                    <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
-                    <Card title="Manicura" className="cardImage letterSpacing card3" />
-                    <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
-                    <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
-                    <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
-                    <Card title="Spa de Pies" className="cardImage letterSpacing card2" />
-                </Carousel>;
-
-            </section>
-            <section className="fondoGrisOscuro width100vw">
+            
+            <section className="fondoNegro width100vw">
                 <h2 className="marcasTexto fontMontserrat textoCentrado"><Balancer className="fontOswald letterSpacing">Trabajan con Nosotros</Balancer> </h2>
-                <div className="flex__marcas">
+                <Carousel className="flex__marcas" responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
                     <Marcas className="marcaImagen kerastase" />
                     <Marcas className="marcaImagen loreal" />
                     <Marcas className="marcaImagen inoa" />
                     <Marcas className="marcaImagen opi" />
-                </div>
+                </Carousel>
             </section>
         </>
     )

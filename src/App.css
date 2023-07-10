@@ -61,8 +61,16 @@
   color: var(--main-bg-color);
 }
 
+.fondoRojo {
+  background-color: var(--red-text-color);
+}
+
 .fondoRosaOscuro {
   background-color: var(--pink-text-color);
+}
+
+.fondoNegro{
+  background-color: #000;
 }
 
 .textoRosaOscuro {
@@ -158,8 +166,8 @@
   flex-direction: row;
   justify-content: space-around;
   margin-top: 3vh;
-  width: 900px;
-  border-radius: 10px;
+  width: 1000px;
+  border-radius: 30px;
   position: fixed;
   top: 2vh;
   transition: 1s;
@@ -223,13 +231,13 @@
 
 .navbar__ul--list {
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
   font-family: 'Manrope', sans-serif;
 }
 
 .navbar__ul--list li {
   cursor: pointer;
-  padding: 0 15px;
+  padding: 5px 15px;
   text-align: center;
   list-style-type: none;
   font: 700 .95em 'Manrope';
@@ -254,6 +262,9 @@
   flex-direction: row;
 }
 
+.botonReservas {
+  border-radius: 20px;
+}
 
 .textIntro {
   margin-bottom: 10vh;
@@ -347,6 +358,28 @@
 .facebook {
   background-image: url(../src/assets/facebook.png);
 }
+
+
+
+
+.scs-floating-button-right {
+  width: 160px;
+  height: 25px;
+}
+
+.scs-floating-button {
+  top: 35vh;
+  left: -2em;
+  border-radius: 30px;
+  display: flex;
+  align-content: end;
+  justify-content: center;
+  font: 700 1.1em 'Manrope';
+  letter-spacing: .1em;
+  background-color: #ed1f27;
+  flex-wrap: wrap;
+}
+
 
 /* =============================================== 
 
@@ -466,7 +499,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: color-dodge; 
   margin-bottom: 20px;
 }
 
@@ -747,6 +780,22 @@
     gap: 50px;
   }
 
+  .scs-floating-button {
+    position: fixed;
+    top: 90vh;
+    bottom: 0;
+    left: 35%;
+    right: auto;
+    -webkit-transform: none;
+    transform: none;
+    z-index: 1000;
+  }
+
+
+  .scs-floating-button-right {
+    margin-left: unset;
+  }
+
   /* --------------------------
 ..........main............
 ----------------------------*/
@@ -799,6 +848,7 @@
   .main__card {
     width: 100%;
   }
+
 }
 
 
