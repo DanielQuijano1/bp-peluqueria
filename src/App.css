@@ -859,6 +859,12 @@
     width: 70vw;
   }
 
+  /* popup */
+  .popup__box {
+    gap: 20px;
+  }
+
+
   .scs-floating-button {
     width: 100vw;
     position: fixed;
