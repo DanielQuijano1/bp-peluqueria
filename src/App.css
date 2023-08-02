@@ -855,6 +855,10 @@
     gap: 50px;
   }
 
+  .textIntro__p {
+    width: 80vw;
+  }
+
   .scs-floating-button {
     width: 100vw;
     position: fixed;
@@ -883,6 +887,12 @@
   .main_flexPhotos {
     flex-direction: column;
     height: 120vw;
+    width: 100vw;
+    max-width: 100vh;
+  }
+
+  .main_section {
+    width: 100vw;
   }
 
   .main__img {

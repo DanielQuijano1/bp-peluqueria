@@ -9,7 +9,7 @@ function Main() {
                     <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing"><Balancer className="fontOswald fontWeight400"> ¿Quienes Somos?</Balancer></div>
                     <p className="textoGrisClaro textoCentrado"><Balancer className="widthYheigth100">Fundada con la visión de marcar una diferencia en la industria de la belleza, beautyport es el resultado de un sueño compartido por un equipo apasionado y comprometido con la responsabilidad medioambiental. Nuestra dedicación hacia lo natural y ecológico se refleja en cada detalle de nuestras prácticas y servicios. Al unir la elegancia con el respeto por la naturaleza, ofrecemos una experiencia de peluquería que cuida de tu estilo y del mundo.</Balancer></p>
                 </div>
-            </div>
+            </div> 
 
             <section className="main_section">
                 <div className="main_flexPhotos main_borders">
