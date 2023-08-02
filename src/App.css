@@ -849,7 +849,7 @@
   }
 
   .textIntro {
-    max-width: 100%;
+    width: 95vw;
     display: grid;
     place-content: end center;
     gap: 50px;
