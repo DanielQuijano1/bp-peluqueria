@@ -467,6 +467,7 @@
 }
 
 .main__flex--interior {
+  width: 100%;
   flex-direction: column;
 }
 

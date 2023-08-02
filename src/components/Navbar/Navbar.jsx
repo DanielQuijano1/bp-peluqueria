@@ -49,13 +49,7 @@ function Navbar() {
             document.removeEventListener("mousedown", handler)
         }
     })
-
-    const [isLoading, setIsLoading] = useState(true)
-
-    useEffect(
-        () => { setTimeout(() => { setIsLoading(false) }, 3000) }
-    )
-
+    
     return (
         <>
             <div className="imgFondo">
@@ -112,20 +106,17 @@ function Navbar() {
                     </div>
 
                 </div>
-                {isLoading ?
-                    <div className="scs-floating-button-right scs-floating-button fondoRojo">
-                        <span className="loader"/>
-                    </div>
-                    :
-                    <Helmet>
-                        <script data-origin="https://home.shortcutssoftware.com/beautyport" data-company-id="19760" data-widget="_m"
-                            data-floating-button="True" data-floating-button-text="Reservar Turno" data-floating-button-color="#FF2424"
-                            data-floating-button-text-color="#FFFFFF" data-side-widget-position="right" data-floating-button-position="right"
-                            type="text/javascript" style="background-color:unset;"
-                            src="https://bookingscontent.shortcutssoftware.com/ols-onlinebooking-ui/assets/ols-widget/dist/ols-widget.min.js">
-                        </script>
-                    </Helmet>
-                }
+                <div className="scs-floating-button-right scs-floating-button fondoRojo">
+                    <span className="loader" />
+                </div>
+                <Helmet>
+                    <script data-origin="https://home.shortcutssoftware.com/beautyport" data-company-id="19760" data-widget="_m"
+                        data-floating-button="True" data-floating-button-text="Reservar Turno" data-floating-button-color="#FF2424"
+                        data-floating-button-text-color="#FFFFFF" data-side-widget-position="right" data-floating-button-position="right"
+                        type="text/javascript" style="background-color:unset;"
+                        src="https://bookingscontent.shortcutssoftware.com/ols-onlinebooking-ui/assets/ols-widget/dist/ols-widget.min.js">
+                    </script>
+                </Helmet>
 
             </div>
         </>
