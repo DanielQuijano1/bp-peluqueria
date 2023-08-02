@@ -277,13 +277,13 @@
 }
 
 .textIntro__title {
-  font-size: 3em;
+  font-size: 3.75em;
   font-weight: 700;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .textIntro__p {
-
+  font-size: 1.1em;
   width: 500px;
   overflow: hidden;
 }
@@ -851,12 +851,12 @@
   .textIntro {
     max-width: 100%;
     display: grid;
-    place-content: center;
+    place-content: end center;
     gap: 50px;
   }
 
   .textIntro__p {
-    width: 80vw;
+    width: unset;
   }
 
   .scs-floating-button {

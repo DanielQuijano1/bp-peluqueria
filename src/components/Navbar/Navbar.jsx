@@ -60,7 +60,7 @@ function Navbar() {
         <>
             <div className="imgFondo">
                 <div className="navbar__Flex" id="Inicio">
-                    {windowsSize > 700 ?
+                    {windowsSize > 800 ?
 
                         <div className={navBar ? 'navbar__titleFlex background_titleOscuro' : 'navbar__titleFlex background_title'}>
                             <a href="#"><div className={navBar ? 'navbar__title shadowText' : 'navbar__title'}>beauty port</div></a>
