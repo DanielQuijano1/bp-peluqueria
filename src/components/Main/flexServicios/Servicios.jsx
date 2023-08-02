@@ -1,6 +1,5 @@
 import { Balancer } from "react-wrap-balancer";
 import "../../../App.css";
-import Card from "./Card.jsx";
 import Marcas from "./Marcas";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';

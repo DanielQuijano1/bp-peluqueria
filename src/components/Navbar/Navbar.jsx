@@ -1,6 +1,8 @@
 import { Balancer } from "react-wrap-balancer";
 import "../../App.css";
 import { useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet";
+import Loader from "./Loader";
 
 function Navbar() {
 
@@ -48,6 +50,12 @@ function Navbar() {
         }
     })
 
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(
+        () => { setTimeout(() => { setIsLoading(false) }, 3000) }
+    )
+
     return (
         <>
             <div className="imgFondo">
@@ -77,25 +85,26 @@ function Navbar() {
                                     <a href="#SobreNosotros" ><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></a>
                                     <a href="#Servicios" ><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></a>
                                     <a href="#Contacto" ><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></a>
+                                    <li className="letterSpacing textoGrisOscuro">Idioma: <div className="textoGrisOscuro">ES</div> <div aria-disabled>EN</div> </li>
                                 </ul>
                             </div>
                         </div>
 
                     }
-                    <div className="navbar__arreglo"></div> 
+                    <div className="navbar__arreglo"></div>
 
                     <div className="navbar__img-text-conainer">
 
                         <div className="textIntro">
                             {windowsSize > 700 ?
                                 <>
-                                    <div className="textIntro__title textoGrisOscuro"><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
-                                    <p className="textIntro__p textoGrisMedio"> <Balancer> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi consectetur cum blanditiis cupiditate, nemo consequatur qui numquam iste ea culpa quae.</Balancer></p>
+                                    <div className="textIntro__title textoGrisOscuro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
+                                    <p className="textIntro__p textoGrisMedio centrado"> <Balancer>Bienvenidos a <b>beautyport</b>: &#10; Donde la Belleza se Une con la Sostenibilidad. Descubre la Armonía entre el Estilo y el Medio Ambiente. </Balancer></p>
                                 </>
                                 :
                                 <>
-                                    <div className="textIntro__title textoRosaClaro"><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
-                                    <p className="textIntro__p textoRosaClaro"> <Balancer> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi consectetur cum blanditiis cupiditate, nemo consequatur qui numquam iste ea culpa quae.</Balancer></p>
+                                    <div className="textIntro__title textoRosaClaro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
+                                    <p className="textIntro__p textoRosaClaro centrado"> <Balancer>Bienvenidos a beautyport: Donde la Belleza se Une con la Sostenibilidad.  Descubre la Armonía entre el Estilo y el Medio Ambiente". </Balancer></p>
                                 </>
                             }
                         </div>
@@ -103,6 +112,21 @@ function Navbar() {
                     </div>
 
                 </div>
+                {isLoading ?
+                    <div className="scs-floating-button-right scs-floating-button fondoRojo">
+                        <span className="loader"/>
+                    </div>
+                    :
+                    <Helmet>
+                        <script data-origin="https://home.shortcutssoftware.com/beautyport" data-company-id="19760" data-widget="_m"
+                            data-floating-button="True" data-floating-button-text="Reservar Turno" data-floating-button-color="#FF2424"
+                            data-floating-button-text-color="#FFFFFF" data-side-widget-position="right" data-floating-button-position="right"
+                            type="text/javascript" style="background-color:unset;"
+                            src="https://bookingscontent.shortcutssoftware.com/ols-onlinebooking-ui/assets/ols-widget/dist/ols-widget.min.js">
+                        </script>
+                    </Helmet>
+                }
+
             </div>
         </>
     )
