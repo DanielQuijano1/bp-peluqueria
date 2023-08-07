@@ -16,7 +16,7 @@ function Main({ windowsSize }) {
 
                     <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing espaciadoVH"><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
                     <div className="main_flexPhotos main_borders animacionScroll espaciadoVH">
-                        <div className="main__img img1 "></div>
+                        <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
                                 <h1 className="titleTextImg">Experiencia en Sintonía con la Naturaleza: </h1>
@@ -36,11 +36,11 @@ function Main({ windowsSize }) {
                                 <br />Creemos que la belleza no debería dañar a la naturaleza, y por eso, nuestras prácticas son siempre respetuosas con el ecosistema.
                             </Balancer>
                         </div>
-                        <div className="main__img img2 "></div>
+                        <div className="main__img img2 borderIMG2"></div>
                     </div>
 
                     <div className="main_flexPhotos main_borders animacionScroll espaciadoVH">
-                        <div className="main__img img1 "></div>
+                        <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
                                 <h1>   Experiencia en Sintonía con la Naturaleza:</h1>
@@ -55,7 +55,7 @@ function Main({ windowsSize }) {
 
                     <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing espaciadoVH"><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
                     <div className="main_flexPhotos main_borders animacionScroll espaciadoVH">
-                        <div className="main__img img1 "></div>
+                        <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
                                 <h1 className="titleTextImg">Experiencia en Sintonía con la Naturaleza: </h1>
@@ -66,8 +66,8 @@ function Main({ windowsSize }) {
                     </div>
 
                     <div className="main_flexPhotos animacionScroll espaciadoVH">
-                        
-                    <div className="main__img img2 "></div>
+
+                        <div className="main__img img2 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
                                 <h1> Productos Sustentables: </h1>
@@ -78,7 +78,7 @@ function Main({ windowsSize }) {
                     </div>
 
                     <div className="main_flexPhotos animacionScroll espaciadoVH">
-                        <div className="main__img img2 "></div>
+                        <div className="main__img img2 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
                                 <h1> Productos Sustentables: </h1>
