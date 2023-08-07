@@ -936,7 +936,7 @@
   .main__img {
     width: 95vw;
     height: 50vw;
-    margin-left: 2vh;
+    margin-left: 1vw;
   }
 
   .main__img::before {
