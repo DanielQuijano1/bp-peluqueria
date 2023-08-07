@@ -136,6 +136,28 @@
   text-decoration: underline;
 }
 
+@keyframes show{
+  from{
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.animacionScroll{
+  view-timeline-name: --imagen;
+  view-timeline-axis: block;
+
+  animation-timeline: --imagen;
+  animation-name: show;
+
+  animation-range: entry 25% cover 40%;
+  animation-fill-mode: both;
+}
 /* =============================================== 
 
 --------------------- NAVBAR ---------------------

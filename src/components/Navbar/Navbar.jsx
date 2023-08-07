@@ -2,7 +2,6 @@ import { Balancer } from "react-wrap-balancer";
 import "../../App.css";
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
-import Loader from "./Loader";
 
 function Navbar() {
 
