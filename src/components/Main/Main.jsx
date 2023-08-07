@@ -49,6 +49,9 @@ function Main({ windowsSize }) {
                             </Balancer>
                         </div>
                     </div>
+
+                    <div className="espaciadoVH"></div>
+                    
                 </section>
                 :
                 <section className="main_section ">
@@ -90,7 +93,6 @@ function Main({ windowsSize }) {
                 </section>
             }
 
-            <div className="espaciadoVH"></div>
         </>
     )
 }
