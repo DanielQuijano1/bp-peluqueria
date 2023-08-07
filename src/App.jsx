@@ -31,7 +31,7 @@ function App() {
         <BrowserRouter>
           <Navbar windowsSize={windowsSize} />
           <Popup />
-          <Main />
+          <Main windowsSize={windowsSize}/>
           <Servicios />
           <Footer />
         </BrowserRouter>

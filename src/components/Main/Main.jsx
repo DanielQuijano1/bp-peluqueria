@@ -11,7 +11,7 @@ function Main({ windowsSize }) {
                 </div>
             </div>
 
-            {windowsSize > 800 ?
+            {windowsSize > 700 ?
                 <section className="main_section ">
 
                     <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing espaciadoVH"><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
@@ -89,6 +89,8 @@ function Main({ windowsSize }) {
                     </div>
                 </section>
             }
+
+            <div className="espaciadoVH"></div>
         </>
     )
 }
