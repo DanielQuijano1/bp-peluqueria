@@ -3,7 +3,7 @@ import "../../App.css";
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 
-function Navbar() {
+function Navbar({windowsSize}) {
 
     const [navBar, setNavBar] = useState(false)
 
@@ -17,21 +17,7 @@ function Navbar() {
 
     window.addEventListener('scroll', changeBackground)
 
-
-
-    const [windowsSize, setWindowsSize] = useState([window.innerWidth])
-
-    useEffect(() => {
-        const handleWindowsResize = () => {
-            setWindowsSize([window.innerWidth]);
-        };
-
-        window.addEventListener('resize', handleWindowsResize);
-
-        return () => {
-            window.removeEventListener('resize', handleWindowsResize);
-        };
-    });
+    
 
     const [open, setOpen] = useState(false);
 

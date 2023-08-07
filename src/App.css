@@ -155,7 +155,7 @@
   animation-timeline: --imagen;
   animation-name: show;
 
-  animation-range: entry 25% cover 40%;
+  animation-range: entry 10% cover 30%;
   animation-fill-mode: both;
 }
 /* =============================================== 
