@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react'
 
 function App() {
 
+  //windows size
   const [windowsSize, setWindowsSize] = useState([window.innerWidth])
 
     useEffect(() => {

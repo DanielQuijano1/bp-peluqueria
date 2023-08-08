@@ -11,7 +11,7 @@ function Main({ windowsSize }) {
                 </div>
             </div>
 
-            {windowsSize > 700 ?
+            {windowsSize > 800 ?
                 <section className="main_section ">
 
                     <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing "><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
@@ -19,7 +19,7 @@ function Main({ windowsSize }) {
                         <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
-                                <h1 className="titleTextImg">Experiencia en Sintonía con la Naturaleza: </h1>
+                                <h1 className="titleTextImg">Experiencia en Sintonía con la Naturaleza </h1>
                                 Nuestro equipo de estilistas altamente capacitados combina su experiencia en el mundo del estilismo con un profundo respeto por el medio ambiente. <br />
                                 <br />Cada servicio que ofrecemos está diseñado para realzar tu belleza sin comprometer la salud de tu cabello o del planeta.
                             </Balancer>
@@ -31,7 +31,7 @@ function Main({ windowsSize }) {
                     <div className="main_flexPhotos animacionScroll">
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
-                                <h1> Productos Sustentables: </h1>
+                                <h1> Productos Sustentables </h1>
                                 Utilizamos exclusivamente productos ecológicos, libres de químicos nocivos, que cuidan tanto de tu cabello como del medio ambiente. <br />
                                 <br />Creemos que la belleza no debería dañar a la naturaleza, y por eso, nuestras prácticas son siempre respetuosas con el ecosistema.
                             </Balancer>
@@ -43,9 +43,9 @@ function Main({ windowsSize }) {
                         <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
-                                <h1>   Experiencia en Sintonía con la Naturaleza:</h1>
-                                Nuestro equipo de estilistas altamente capacitados combina su experiencia en el mundo del estilismo con un profundo respeto por el medio ambiente. <br />
-                                <br />Cada servicio que ofrecemos está diseñado para realzar tu belleza sin comprometer la salud de tu cabello o del planeta.
+                                <h1> Atención Personalizada </h1>
+                                Cada cliente es único, y así lo tratamos. <br />
+                                <br />Nuestro enfoque personalizado nos permite entender tus necesidades y deseos para ofrecerte un servicio que supere tus expectativas y te haga sentir radiante.
                             </Balancer>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ function Main({ windowsSize }) {
                         <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
-                                <h1 className="titleTextImg">Experiencia en Sintonía con la Naturaleza: </h1>
+                                <h1 className="titleTextImg">Experiencia en Sintonía con la Naturaleza </h1>
                                 Nuestro equipo de estilistas altamente capacitados combina su experiencia en el mundo del estilismo con un profundo respeto por el medio ambiente. <br />
                                 <br />Cada servicio que ofrecemos está diseñado para realzar tu belleza sin comprometer la salud de tu cabello o del planeta.
                             </Balancer>
@@ -73,7 +73,7 @@ function Main({ windowsSize }) {
                         <div className="main__img img2 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
-                                <h1> Productos Sustentables: </h1>
+                                <h1> Productos Sustentables </h1>
                                 Utilizamos exclusivamente productos ecológicos, libres de químicos nocivos, que cuidan tanto de tu cabello como del medio ambiente. <br />
                                 <br />Creemos que la belleza no debería dañar a la naturaleza, y por eso, nuestras prácticas son siempre respetuosas con el ecosistema.
                             </Balancer>
@@ -84,9 +84,9 @@ function Main({ windowsSize }) {
                         <div className="main__img img2 borderIMG1"></div>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
-                                <h1> Productos Sustentables: </h1>
-                                Utilizamos exclusivamente productos ecológicos, libres de químicos nocivos, que cuidan tanto de tu cabello como del medio ambiente. <br />
-                                <br />Creemos que la belleza no debería dañar a la naturaleza, y por eso, nuestras prácticas son siempre respetuosas con el ecosistema.
+                                <h1> Atención Personalizada </h1>
+                                Cada cliente es único, y así lo tratamos. <br />
+                                <br />Nuestro enfoque personalizado nos permite entender tus necesidades y deseos para ofrecerte un servicio que supere tus expectativas y te haga sentir radiante.
                             </Balancer>
                         </div>
                     </div>
