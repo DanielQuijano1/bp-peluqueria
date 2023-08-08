@@ -919,7 +919,6 @@
 ----------------------------*/
   .main__flex {
     width: 100vw;
-    margin-left: 2vw;
   }
 
   .main_flexPhotos {
@@ -931,12 +930,13 @@
 
   .main_section {
     width: 100vw;
+    margin-left: 2vw;
   }
 
   .main__img {
     width: 95vw;
     height: 50vw;
-    margin-left: 1vw;
+    margin-left: 2vw;
   }
 
   .main__img::before {
