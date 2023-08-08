@@ -89,7 +89,13 @@ function Navbar({ windowsSize }) {
                                 :
                                 <>
                                     <div className="textIntro__title textoRosaClaro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
-                                    <p className="textIntro__p textoRosaClaro centrado"> <Balancer>Bienvenidos a beautyport: Donde la Belleza se Une con la Sostenibilidad.  Descubre la Armonía entre el Estilo y el Medio Ambiente". </Balancer></p>
+                                    <p className="textIntro__p textoRosaClaro centrado">
+                                        <Balancer>
+                                            Bienvenidos a <b>beautyport</b>: <br />
+                                            Donde la Belleza se Une con la Sostenibilidad. <br />
+                                            Descubre la Armonía entre el Estilo y el Medio Ambiente.
+                                        </Balancer>
+                                    </p>
                                 </>
                             }
                         </div>
