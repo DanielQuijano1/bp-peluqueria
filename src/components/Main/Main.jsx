@@ -14,7 +14,7 @@ function Main({ windowsSize }) {
             {windowsSize > 700 ?
                 <section className="main_section ">
 
-                    <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing espaciadoVH"><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
+                    <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing "><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
                     <div className="main_flexPhotos main_borders animacionScroll espaciadoVH">
                         <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
@@ -28,7 +28,7 @@ function Main({ windowsSize }) {
 
 
 
-                    <div className="main_flexPhotos animacionScroll espaciadoVH">
+                    <div className="main_flexPhotos animacionScroll">
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100">
                                 <h1> Productos Sustentables: </h1>
@@ -51,12 +51,12 @@ function Main({ windowsSize }) {
                     </div>
 
                     <div className="espaciadoVH"></div>
-                    
+
                 </section>
                 :
                 <section className="main_section ">
 
-                    <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing espaciadoVH"><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
+                    <div className="textIntro__title textoCentrado textoGrisOscuro letterSpacing "><Balancer className="fontOswald fontWeight400"> ¿Por Qué Elegirnos?</Balancer></div>
                     <div className="main_flexPhotos main_borders animacionScroll espaciadoVH">
                         <div className="main__img img1 borderIMG1"></div>
                         <div className="textoImg ">
@@ -68,7 +68,7 @@ function Main({ windowsSize }) {
                         </div>
                     </div>
 
-                    <div className="main_flexPhotos animacionScroll espaciadoVH">
+                    <div className="main_flexPhotos animacionScroll ">
 
                         <div className="main__img img2 borderIMG1"></div>
                         <div className="textoImg ">
