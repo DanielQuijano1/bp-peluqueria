@@ -3,7 +3,7 @@ import "../../App.css";
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 
-function Navbar({windowsSize}) {
+function Navbar({ windowsSize }) {
 
     const [navBar, setNavBar] = useState(false)
 
@@ -17,7 +17,7 @@ function Navbar({windowsSize}) {
 
     window.addEventListener('scroll', changeBackground)
 
-    
+
 
     const [open, setOpen] = useState(false);
 
@@ -34,7 +34,7 @@ function Navbar({windowsSize}) {
             document.removeEventListener("mousedown", handler)
         }
     })
-    
+
     return (
         <>
             <div className="imgFondo">
@@ -78,7 +78,13 @@ function Navbar({windowsSize}) {
                             {windowsSize > 700 ?
                                 <>
                                     <div className="textIntro__title textoGrisOscuro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
-                                    <p className="textIntro__p textoGrisMedio centrado"> <Balancer>Bienvenidos a <b>beautyport</b>: &#10; Donde la Belleza se Une con la Sostenibilidad. Descubre la Armonía entre el Estilo y el Medio Ambiente. </Balancer></p>
+                                    <p className="textIntro__p textoGrisMedio centrado">
+                                        <Balancer>
+                                            Bienvenidos a <b>beautyport</b>: <br />
+                                            Donde la Belleza se Une con la Sostenibilidad. <br />
+                                            Descubre la Armonía entre el Estilo y el Medio Ambiente.
+                                        </Balancer>
+                                    </p>
                                 </>
                                 :
                                 <>
