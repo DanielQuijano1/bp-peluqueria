@@ -86,7 +86,7 @@ function Navbar({ windowsSize }) {
                                     <p className="textIntro__p textoGrisMedio centrado">
                                         <Balancer>
                                             Bienvenidos a <b>beautyport</b>: <br />
-                                            Donde la Belleza se Une con la Sostenibilidad. <br />
+                                            Donde la Belleza se Une con la Sustentabilidad. <br />
                                             Descubre la Armonía entre el Estilo y el Medio Ambiente.
                                         </Balancer>
                                     </p>
@@ -97,7 +97,7 @@ function Navbar({ windowsSize }) {
                                     <p className="textIntro__p textoRosaClaro centrado">
                                         <Balancer>
                                             Bienvenidos a <b>beautyport</b>: <br />
-                                            Donde la Belleza se Une con la Sostenibilidad. <br />
+                                            Donde la Belleza se Une con la Sustentabilidad. <br />
                                             Descubre la Armonía entre el Estilo y el Medio Ambiente.
                                         </Balancer>
                                     </p>

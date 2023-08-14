@@ -22,7 +22,7 @@ const responsive = {
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1,
+        items: 2,
         slidesToSlide: 1 // optional, default to 1.
     }
 };
@@ -33,7 +33,7 @@ function Servicios() {
             
             <section className="fondoNegro width100vw">
                 <h2 className="marcasTexto fontMontserrat textoCentrado"><Balancer className="fontOswald letterSpacing">Trabajan con Nosotros</Balancer> </h2>
-                <Carousel className="flex__marcas" responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
+                <Carousel className="flex__marcas" responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
                     <Marcas className="marcaImagen kerastase" />
                     <Marcas className="marcaImagen loreal" />
                     <Marcas className="marcaImagen inoa" />
