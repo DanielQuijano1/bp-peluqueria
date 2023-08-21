@@ -2,9 +2,8 @@ import { Balancer } from "react-wrap-balancer";
 import "../../App.css";
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
-import Loader from "./Loader";
 
-function Navbar() {
+function Navbar({ windowsSize }) {
 
     const [navBar, setNavBar] = useState(false)
 
@@ -19,20 +18,6 @@ function Navbar() {
     window.addEventListener('scroll', changeBackground)
 
 
-
-    const [windowsSize, setWindowsSize] = useState([window.innerWidth])
-
-    useEffect(() => {
-        const handleWindowsResize = () => {
-            setWindowsSize([window.innerWidth]);
-        };
-
-        window.addEventListener('resize', handleWindowsResize);
-
-        return () => {
-            window.removeEventListener('resize', handleWindowsResize);
-        };
-    });
 
     const [open, setOpen] = useState(false);
 
@@ -49,7 +34,7 @@ function Navbar() {
             document.removeEventListener("mousedown", handler)
         }
     })
-    
+
     return (
         <>
             <div className="imgFondo">
@@ -79,7 +64,12 @@ function Navbar() {
                                     <a href="#SobreNosotros" ><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></a>
                                     <a href="#Servicios" ><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></a>
                                     <a href="#Contacto" ><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></a>
-                                    <li className="letterSpacing textoGrisOscuro">Idioma: <div className="textoGrisOscuro">ES</div> <div aria-disabled>EN</div> </li>
+                                    <li className="letterSpacing textoGrisOscuro">
+                                        Idioma:
+                                        <div className="flags__item"></div>
+                                        <span class="fi fi-ar"></span>
+                                        <div aria-disabled>EN</div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -90,15 +80,27 @@ function Navbar() {
                     <div className="navbar__img-text-conainer">
 
                         <div className="textIntro">
-                            {windowsSize > 700 ?
+                            {windowsSize > 800 ?
                                 <>
                                     <div className="textIntro__title textoGrisOscuro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
-                                    <p className="textIntro__p textoGrisMedio centrado"> <Balancer>Bienvenidos a <b>beautyport</b>: &#10; Donde la Belleza se Une con la Sostenibilidad. Descubre la Armonía entre el Estilo y el Medio Ambiente. </Balancer></p>
+                                    <p className="textIntro__p textoGrisMedio centrado">
+                                        <Balancer>
+                                            Bienvenidos a <b>beautyport</b>: <br />
+                                            Donde la Belleza se Une con la Sustentabilidad. <br />
+                                            Descubre la Armonía entre el Estilo y el Medio Ambiente.
+                                        </Balancer>
+                                    </p>
                                 </>
                                 :
                                 <>
                                     <div className="textIntro__title textoRosaClaro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
-                                    <p className="textIntro__p textoRosaClaro centrado"> <Balancer>Bienvenidos a beautyport: Donde la Belleza se Une con la Sostenibilidad.  Descubre la Armonía entre el Estilo y el Medio Ambiente". </Balancer></p>
+                                    <p className="textIntro__p textoRosaClaro centrado">
+                                        <Balancer>
+                                            Bienvenidos a <b>beautyport</b>: <br />
+                                            Donde la Belleza se Une con la Sustentabilidad. <br />
+                                            Descubre la Armonía entre el Estilo y el Medio Ambiente.
+                                        </Balancer>
+                                    </p>
                                 </>
                             }
                         </div>
