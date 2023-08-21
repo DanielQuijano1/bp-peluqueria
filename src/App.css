@@ -543,6 +543,7 @@
 
 .img1 {
   background-image: url(../src/assets/pexels-polina-tankilevitch-3738359.jpg);
+  background-position: center center;
 }
 
 .borderIMG1 {
@@ -558,7 +559,7 @@
 }
 
 .img3 {
-  background-image: url(../src/assets/pexels-pixabay-205893.jpeg) ;
+  background-image: url(../src/assets/pexels-engin-akyurt-3331486.jpg) ;
 }
 
 .textoImg {
