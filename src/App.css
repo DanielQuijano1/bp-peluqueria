@@ -132,6 +132,10 @@
   font-weight: 500;
 }
 
+.fontSize18px{
+  font-size: 18px;
+}
+
 .textUnderline {
   text-decoration: underline;
 }
@@ -538,7 +542,7 @@
 }
 
 .img1 {
-  background-image: url(../src/assets/peluquero-tijeras-peine-cabello_23-2148298336.jpg);
+  background-image: url(../src/assets/pexels-polina-tankilevitch-3738359.jpg);
 }
 
 .borderIMG1 {
@@ -546,12 +550,15 @@
 }
 
 .img2 {
-  background-image: url(../src/assets/13528568_1752697558322286_1847042502262912847_o.jpg);
-
+  background-image: url(../src/assets/pexels-cottonbro-studio-3993294.jpg);
 }
 
 .borderIMG2 {
   border-radius: 50px 20px 60px 50px;
+}
+
+.img3 {
+  background-image: url(../src/assets/pexels-pixabay-205893.jpeg) ;
 }
 
 .textoImg {
@@ -860,7 +867,6 @@
 
   .navbar__Flex {
     max-width: 100vw;
-    min-height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -871,18 +877,11 @@
     height: 0;
   }
 
-  .navbar__img-text-conainer {
-    width: 85vw;
-    height: 90vh;
-    left: 1vh;
-    display: grid;
-    place-content: end end;
-  }
 
   .textIntro {
-    width: 95vw;
+    width: 80vw;
     display: grid;
-    place-content: end center;
+    place-content: end end;
     gap: 50px;
     font-size: 18px;
   }
@@ -915,10 +914,6 @@
     margin-left: unset;
   }
 
-  .textIntro__Box{
-    position: relative;
-    bottom: -7vh;
-  }
   /* --------------------------
 ..........main............
 ----------------------------*/

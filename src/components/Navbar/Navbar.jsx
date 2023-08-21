@@ -93,7 +93,7 @@ function Navbar({ windowsSize }) {
                                 </>
                                 :
                                 <div className="textIntro__Box">
-                                    <div className="textIntro__title textoGrisOscuro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
+                                    <div className="textIntro__title textoGrisOscuro "><Balancer className="fontOswald fontWeight500"> Libera Todo Tu Potencial</Balancer></div>
                                     <p className="textIntro__p textoGrisOscuro centrado">
                                         <Balancer>
                                             Bienvenidos a <b>beautyport</b><br />
