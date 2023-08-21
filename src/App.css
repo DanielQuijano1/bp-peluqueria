@@ -950,7 +950,7 @@
     background-image:
       linear-gradient(to bottom,
         transparent 10%,
-        transparent 70%,
+        transparent 85%,
         var(--main-bg-color,0.5) 95%,
         var(--main-bg-color) 100%);
   }
