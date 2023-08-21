@@ -73,7 +73,7 @@ function Main({ windowsSize }) {
                         <div className="main__img img2 borderIMG1"/>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100 fontSize18px">
-                                <h1> Productos Sustentables </h1>
+                                <h1 className="titleTextImg"> Productos Sustentables </h1>
                                 Utilizamos exclusivamente productos ecológicos, libres de químicos nocivos, que cuidan tanto de tu cabello como del medio ambiente. <br />
                                 <br />Creemos que la belleza no debería dañar a la naturaleza, y por eso, nuestras prácticas son siempre respetuosas con el ecosistema.
                             </Balancer>
@@ -84,7 +84,7 @@ function Main({ windowsSize }) {
                         <div className="main__img img3 borderIMG1"/>
                         <div className="textoImg ">
                             <Balancer className="widthYheigth100 fontSize18px">
-                                <h1> Atención Personalizada </h1>
+                                <h1 className="titleTextImg"> Atención Personalizada </h1>
                                 Cada cliente es único, y así lo tratamos. <br />
                                 <br />Nuestro enfoque personalizado nos permite entender tus necesidades y deseos para ofrecerte un servicio que supere tus expectativas y te haga sentir radiante.
                             </Balancer>

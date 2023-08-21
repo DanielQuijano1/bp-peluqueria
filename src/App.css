@@ -964,6 +964,9 @@
     height: 100%;
     padding: 30px 0px;
   }
+  .titleTextImg{
+    font-size: 40px;
+  }
 
   /*  ---  servicios ---  */
   .flex__marcas {
