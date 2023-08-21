@@ -85,23 +85,23 @@ function Navbar({ windowsSize }) {
                                     <div className="textIntro__title textoGrisOscuro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
                                     <p className="textIntro__p textoGrisMedio centrado">
                                         <Balancer>
-                                            Bienvenidos a <b>beautyport</b>: <br />
+                                            Bienvenidos a <b>beautyport</b> <br />
                                             Donde la Belleza se Une con la Sustentabilidad. <br />
-                                            Descubre la Armonía entre el Estilo y el Medio Ambiente.
+                                            Descubre la Armonía entre el Estilo y el Medio Ambiente.    
                                         </Balancer>
                                     </p>
                                 </>
                                 :
-                                <>
-                                    <div className="textIntro__title textoRosaClaro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
-                                    <p className="textIntro__p textoRosaClaro centrado">
+                                <div className="textIntro__Box">
+                                    <div className="textIntro__title textoGrisOscuro "><Balancer className="fontOswald fontWeight500 letterSpacing"> Libera Todo Tu Potencial</Balancer></div>
+                                    <p className="textIntro__p textoGrisOscuro centrado">
                                         <Balancer>
-                                            Bienvenidos a <b>beautyport</b>: <br />
+                                            Bienvenidos a <b>beautyport</b><br />
                                             Donde la Belleza se Une con la Sustentabilidad. <br />
                                             Descubre la Armonía entre el Estilo y el Medio Ambiente.
                                         </Balancer>
                                     </p>
-                                </>
+                                </div>
                             }
                         </div>
 

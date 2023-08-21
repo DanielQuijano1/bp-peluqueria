@@ -723,7 +723,7 @@
 ..........navbar............
 ----------------------------*/
   .imgFondo {
-    background-position: 65% center;
+    background-position: 50% center;
   }
 
   .navbar__titleFlex {
@@ -873,10 +873,10 @@
 
   .navbar__img-text-conainer {
     width: 90vw;
-    height: 100vh;
+    height: 90vh;
     left: 5vh;
     display: grid;
-    place-content: center;
+    place-content: end center;
   }
 
   .textIntro {
@@ -884,6 +884,7 @@
     display: grid;
     place-content: end center;
     gap: 50px;
+    font-size: 18px;
   }
 
   .textIntro__p {
@@ -914,6 +915,10 @@
     margin-left: unset;
   }
 
+  .textIntro__Box{
+    position: relative;
+    bottom: -7vh;
+  }
   /* --------------------------
 ..........main............
 ----------------------------*/
