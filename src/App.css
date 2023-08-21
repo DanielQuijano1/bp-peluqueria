@@ -964,6 +964,12 @@
     height: 100%;
     padding: 30px 0px;
   }
+
+  .textIntro__Box{
+    position: relative;
+    left: -20px;
+  }
+
   .titleTextImg{
     font-size: 40px;
   }
