@@ -69,6 +69,8 @@ function Main({ windowsSize }) {
                                 Nuestro equipo de estilistas altamente capacitados combina su experiencia en el mundo del estilismo con un profundo respeto por el medio ambiente. <br />
                                 <br />Cada servicio que ofrecemos está diseñado para realzar tu belleza sin comprometer la salud de tu cabello o del planeta.
                             </Balancer>
+                            <div className="paddingTop noPaddingTop" />
+
                         </div>
                     </div>
 
@@ -80,6 +82,8 @@ function Main({ windowsSize }) {
                                 Utilizamos exclusivamente productos ecológicos, libres de químicos nocivos, que cuidan tanto de tu cabello como del medio ambiente. <br />
                                 <br />Creemos que la belleza no debería dañar a la naturaleza, y por eso, nuestras prácticas son siempre respetuosas con el ecosistema.
                             </Balancer>
+                            <div className="paddingTop noPaddingTop" />
+
                         </div>
                     </div>
 
@@ -91,6 +95,8 @@ function Main({ windowsSize }) {
                                 Cada cliente es único, y así lo tratamos. <br />
                                 <br />Nuestro enfoque personalizado nos permite entender tus necesidades y deseos para ofrecerte un servicio que supere tus expectativas y te haga sentir radiante.
                             </Balancer>
+                            <div className="paddingTop noPaddingTop" />
+
                         </div>
                     </div>
                 </section>
