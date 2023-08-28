@@ -7,7 +7,7 @@
   --pink-bg-color: #f9c5c7;
 
   --red-text-color: #ed1f27;
-  --pink-text-color: #f37277;
+  --pink-text-color: #DCC281;
 
 
   --main-text-color: #313131;
@@ -698,7 +698,7 @@
 
 .arreglosTitle {
   top: 15px;
-  width: 250px;
+  width: 300px;
 }
 
 .arreglosTitle::before {
@@ -706,7 +706,7 @@
 }
 
 .arreglosTitle::after {
-  left: 45px;
+  left: 59px;
 }
 
 .textoMarcaDeAgua {
@@ -991,12 +991,14 @@
 ..........footer............
 ----------------------------*/
   .arreglosTitle:after {
-    right: 35px;
+    right: 48px;
   }
 
   .footer_boxContent {
     text-align: center;
     padding: 20px 0px;
+    display: grid;
+    place-content: center;
   }
 
   .footer__box {
