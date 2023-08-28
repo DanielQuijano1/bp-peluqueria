@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --main-bg-color: #fdf0f1;
+  --main-bg-color: #F2EFE4;
   --pink-bg-color: #f9c5c7;
 
   --red-text-color: #ed1f27;
@@ -27,8 +27,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-behavior: smooth;
-  transition: .5s;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -116,6 +114,10 @@
   width: 100vw;
 }
 
+.width100p {
+  width: 100%;
+}
+
 .fontMontserrat {
   font-family: 'Montserrat', sans-serif;
 }
@@ -132,7 +134,7 @@
   font-weight: 500;
 }
 
-.fontSize18px{
+.fontSize18px {
   font-size: 18px;
 }
 
@@ -161,6 +163,10 @@
 
   animation-range: entry 10% cover 30%;
   animation-fill-mode: both;
+}
+
+.paddingTop {
+  margin-top: 1.5em;
 }
 
 /* =============================================== 
@@ -203,6 +209,7 @@
   position: fixed;
   top: 2vh;
   transition: 1s;
+  z-index: 9999;
 }
 
 .background_title {
@@ -493,52 +500,51 @@
   justify-content: center;
 }
 
-.main__flex--interior {
-  width: 100%;
-  flex-direction: column;
-}
-
 .main__flex--services {
   flex-direction: column;
 
 }
 
 .main__flexCards {
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.main__card {
-  width: 200px;
-  text-align: center;
-}
-
-.card__img {
-  width: 200px;
-  height: 200px;
-}
-
 .main_section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .main_flexPhotos {
   display: flex;
+  align-items: center;
   flex-direction: row;
-  height: 420px;
-  width: 1000px;
+  height: 400px;
+  width: 100%;
   border-radius: 20px 30px 30px 60px;
+}
+.noPaddingTop{
+  width: 100%;
+  height: 4px;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.noPaddingTop::before {
+  content: "";
+  position: absolute;
+  left: 20%;
+  background-color: #DCC281;
+  width: 60%;
+  height: 100%;
 }
 
 .main__img {
   background-size: cover;
   background-repeat: no-repeat;
   width: calc(100% - 50%);
-  height: 100%;
+  height: 80%;
+  position: relative ;
 }
 
 .img1 {
@@ -551,7 +557,7 @@
 }
 
 .img2 {
-  background-image: url(../src/assets/pexels-cottonbro-studio-3993294.jpg);
+  background-image: url(../src/assets/pexels-sasha-kim-9413730.jpg);
 }
 
 .borderIMG2 {
@@ -559,7 +565,7 @@
 }
 
 .img3 {
-  background-image: url(../src/assets/pexels-engin-akyurt-3331486.jpg) ;
+  background-image: url(../src/assets/pexels-engin-akyurt-3331486.jpg);
 }
 
 .textoImg {
@@ -651,7 +657,7 @@
 }
 
 .footer_boxContent {
-  flex-basis: 250px;
+  display: block;
 }
 
 .footer__marcaDeAgua {
@@ -691,6 +697,7 @@
 
 .arreglosTitle {
   top: 15px;
+  width: 250px;
 }
 
 .arreglosTitle::before {
@@ -951,7 +958,7 @@
       linear-gradient(to bottom,
         transparent 10%,
         transparent 85%,
-        var(--main-bg-color,0.5) 95%,
+        var(--main-bg-color, 0.5) 95%,
         var(--main-bg-color) 100%);
   }
 
@@ -965,12 +972,12 @@
     padding: 30px 0px;
   }
 
-  .textIntro__Box{
+  .textIntro__Box {
     position: relative;
     left: -20px;
   }
 
-  .titleTextImg{
+  .titleTextImg {
     font-size: 40px;
   }
 

@@ -1,9 +1,11 @@
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar.jsx'
-import Main from './components/Main/Main.jsx'
+import Home from './components/Home/Home'
+import About from './components/ListPages/About'
+import Contact from './components/ListPages/Contact'
+import Services from './components/ListPages/Services'
 import Footer from './components/Footer/Footer.jsx'
-import Servicios from './components/Main/flexServicios/Servicios.jsx';
 import Popup from './components/Navbar/Popup/Popup.jsx'
 import { Provider } from 'react-wrap-balancer'
 import { useState, useEffect } from 'react'
@@ -13,17 +15,17 @@ function App() {
   //windows size
   const [windowsSize, setWindowsSize] = useState([window.innerWidth])
 
-    useEffect(() => {
-        const handleWindowsResize = () => {
-            setWindowsSize([window.innerWidth]);
-        };
+  useEffect(() => {
+    const handleWindowsResize = () => {
+      setWindowsSize([window.innerWidth]);
+    };
 
-        window.addEventListener('resize', handleWindowsResize);
+    window.addEventListener('resize', handleWindowsResize);
 
-        return () => {
-            window.removeEventListener('resize', handleWindowsResize);
-        };
-    });
+    return () => {
+      window.removeEventListener('resize', handleWindowsResize);
+    };
+  });
 
 
   return (
@@ -32,8 +34,12 @@ function App() {
         <BrowserRouter>
           <Navbar windowsSize={windowsSize} />
           <Popup />
-          <Main windowsSize={windowsSize}/>
-          <Servicios />
+          <Routes>
+            <Route path='/' element={<Home windowsSize={windowsSize} />} />
+            <Route path='/about/' element={<About windowsSize={windowsSize} />} />
+            <Route path='/services/' element={<Services windowsSize={windowsSize} />}/>
+            <Route path='/contact/' element={<Contact windowsSize={windowsSize} />} />
+          </Routes>
           <Footer />
         </BrowserRouter>
       </Provider>
