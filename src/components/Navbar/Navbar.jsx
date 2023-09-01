@@ -63,9 +63,6 @@ function Navbar({ windowsSize }) {
                             <NavLink to="/contact"><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></NavLink>
                             <li className="letterSpacing textoGrisOscuro">
                                 Idioma:
-                                <div className="flags__item"></div>
-                                <span class="fi fi-ar"></span>
-                                <div aria-disabled>EN</div>
                             </li>
                         </ul>
                     </div>

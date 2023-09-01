@@ -1,13 +1,18 @@
-import { Helmet } from "react-helmet"
 import "./../../App.css"
+import MapaGoogle from "../Map/Map"
 
 function Contact() {
     return (
         <>
-            <div className="contact">
-                <h1>Contact</h1>
+            <div className="width100vw espaciadoVH"></div>
 
+            <h1 className="textoGrisOscuro">Contactanos</h1>
 
+            <div className="">
+                <MapaGoogle />
+                <section>
+                        
+                </section>
             </div>
         </>
     )
