@@ -6,7 +6,7 @@ function Footer() {
         <>
             <div className="footer__box footer__marcaDeAgua width100vw textoGrisOscuro" id="Contacto">
                 <section className="footer_boxContent">
-                    <NavLink to="/"> <div className="navbar__title arreglosTitle">beauty port</div></NavLink>
+                    <NavLink to="/"> <div className="navbar__title">beauty port</div></NavLink>
                 </section>
 
                 <section className="footer_boxContent">

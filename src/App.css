@@ -226,7 +226,7 @@
 .navbar__title {
   cursor: pointer;
   text-align: center;
-  min-width: 5em;
+  min-width: 300px;
   display: grid;
   place-content: center;
   font-family: 'Times New Roman', Times, serif;
@@ -249,8 +249,9 @@
   letter-spacing: .6em;
   color: #ed1f27;
   position: absolute;
-  bottom: -8px;
-  left: 10px;
+  width: 300px;
+  left: 5px;
+  bottom: -12px;
 }
 
 .navbar__title::before {
@@ -261,8 +262,9 @@
   font-weight: 500;
   letter-spacing: .35em;
   position: absolute;
+  width: 300px;
   top: 12px;
-  right: 14px;
+  right: -42px;
 }
 
 .navbar__title:active {
@@ -696,19 +698,6 @@
   transition: .5s;
 }
 
-.arreglosTitle {
-  top: 15px;
-  width: 300px;
-}
-
-.arreglosTitle::before {
-  left: 90px;
-}
-
-.arreglosTitle::after {
-  left: 59px;
-}
-
 .textoMarcaDeAgua {
   color: #4e4c4ca2;
 }
@@ -756,7 +745,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: grid;
     place-content: center;
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   .fondoRosaOscuro {
@@ -771,6 +760,7 @@
     top: 0;
     left: 0;
     padding-left: 10px;
+    padding-bottom: 5px;
     background: #fff;
     justify-content: space-between;
     z-index: 1000;
