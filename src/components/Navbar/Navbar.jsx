@@ -42,10 +42,10 @@ function Navbar({ windowsSize }) {
                     <NavLink to="/"><div className={navBar ? 'navbar__title shadowText' : 'navbar__title'}>beauty port</div></NavLink>
                     <div className="navbar__ul">
                         <ul className="navbar__ul--list ">
-                            <NavLink to="/"><li className="textoRosaClaro letterSpacing animacionActive"> Inicio</li></NavLink>
-                            <NavLink to="/about"><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></NavLink>
-                            <NavLink to="/services"><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></NavLink>
-                            <NavLink to="/contact"><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></NavLink>
+                            <NavLink to="/"><li className={navBar ? 'textoRosaClaro letterSpacing animacionActive':'textoGrisOscuro letterSpacing animacionActive'}> Inicio</li></NavLink>
+                            <NavLink to="/about"><li className={navBar ? 'textoRosaClaro letterSpacing animacionActive':'textoGrisOscuro letterSpacing animacionActive'}> Sobre Nosotros</li></NavLink>
+                            <NavLink to="/services"><li className={navBar ? 'textoRosaClaro letterSpacing animacionActive':'textoGrisOscuro letterSpacing animacionActive'}> Servicios</li></NavLink>
+                            <NavLink to="/contact"><li className={navBar ? 'textoRosaClaro letterSpacing animacionActive':'textoGrisOscuro letterSpacing animacionActive'}> Contáctanos</li></NavLink>
                         </ul>
                     </div>
                 </div>

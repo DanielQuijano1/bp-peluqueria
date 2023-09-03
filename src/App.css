@@ -75,6 +75,11 @@
   color: var(--pink-text-color);
 }
 
+.opacity {
+  opacity: .8;
+}
+
+
 .textoCentrado {
   text-align: center;
 }
@@ -83,6 +88,49 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.centrarGrid {
+  display: grid;
+  place-content: end center;
+}
+
+.flexDirectionColumn {
+  flex-direction: column;
+}
+
+.flexDirectionRow {
+  flex-direction: row;
+}
+
+.spaceAround {
+  justify-content: space-around !important;
+  /* Importante para que funcione */
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+
+.padding1em {
+  padding: 1em;
+}
+
+.padding10 {
+  padding: 10px;
+
 }
 
 .animacionActive:active {
@@ -119,6 +167,14 @@
   width: 100%;
 }
 
+.widthTitle {
+  height: 250px;
+}
+
+.borders {
+  border-radius: 20px;
+}
+
 .fontMontserrat {
   font-family: 'Montserrat', sans-serif;
 }
@@ -142,6 +198,7 @@
 .textUnderline {
   text-decoration: underline;
 }
+
 
 @keyframes show {
   from {
@@ -170,6 +227,10 @@
   margin-top: 1.5em;
 }
 
+.backgroundTitle {
+  background-color: #fdf0f17e;
+  box-shadow: 0 0 10px #605c5c6c;
+}
 /* =============================================== 
 
 --------------------- NAVBAR ---------------------
@@ -525,7 +586,8 @@
   width: 100%;
   border-radius: 20px 30px 30px 60px;
 }
-.noPaddingTop{
+
+.noPaddingTop {
   width: 100%;
   height: 4px;
   display: grid;
@@ -547,7 +609,7 @@
   background-repeat: no-repeat;
   width: calc(100% - 50%);
   height: 80%;
-  position: relative ;
+  position: relative;
 }
 
 .img1 {
@@ -560,7 +622,7 @@
 }
 
 .img2 {
-  background-image: url(../src/assets/pexels-sasha-kim-9413730.jpg);
+  background-image: url(../src/assets/IMG-20230829-WA0003.jpg);
 }
 
 .borderIMG2 {
@@ -713,7 +775,22 @@
 }
 
 
+/* =============================================== 
 
+---------------- Pagina Contact -------------------
+
+================================================*/
+.box500px {
+  width: 500px;
+}
+
+.boxContact {
+  background-color: #5e5e5e;
+}
+
+.imgFondoContact {
+  background-image: url(./assets/IMG-20230829-WA0001.jpg);
+}
 
 
 /* =============================================== 
