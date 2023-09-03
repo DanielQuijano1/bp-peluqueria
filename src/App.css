@@ -1153,3 +1153,11 @@
   top: -5px;
   text-align: center;
 }
+
+.biotherapy::before{
+  content:'permanent color dream';
+  position: absolute;
+  top: 5px ;
+  left: 48%;
+  font-size: 9px;
+}
