@@ -2,6 +2,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Home from './components/Home/Home'
+import Shop from './components/ListPages/Shop'
 import About from './components/ListPages/About'
 import Contact from './components/ListPages/Contact'
 import Services from './components/ListPages/Services'
@@ -36,6 +37,7 @@ function App() {
           <Popup />
           <Routes>
             <Route path='/' element={<Home windowsSize={windowsSize} />} />
+            <Route path='/shop/' element={<Shop windowsSize={windowsSize} />} />
             <Route path='/about/' element={<About windowsSize={windowsSize} />} />
             <Route path='/services/' element={<Services windowsSize={windowsSize} />}/>
             <Route path='/contact/' element={<Contact windowsSize={windowsSize} />} />

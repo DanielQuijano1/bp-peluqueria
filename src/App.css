@@ -103,6 +103,11 @@
   place-content: end center;
 }
 
+.centrarGridCentro {
+  display: grid;
+  place-content: center center;
+}
+
 .flexDirectionColumn {
   flex-direction: column;
 }
@@ -167,8 +172,16 @@
   width: 100%;
 }
 
+.heigth100vh {
+  height: 100vh;
+}
+
 .widthTitle {
   height: 250px;
+}
+
+.gap1em {
+  gap: 1em;
 }
 
 .borders {
@@ -228,9 +241,9 @@
 }
 
 .backgroundTitle {
-  background-color: #fdf0f17e;
-  box-shadow: 0 0 10px #605c5c6c;
+  background-color: #fdf0f1c5;
 }
+
 /* =============================================== 
 
 --------------------- NAVBAR ---------------------
@@ -332,10 +345,21 @@
   scale: .96;
 }
 
+.navbar__ul {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar__ul--list {
   display: flex;
-  gap: 1.5em;
+  gap: .5em;
   font-family: 'Manrope', sans-serif;
+  margin-right: 30px;
+}
+
+.navbar__ul--list {
+  height: 33px;
+  width: max-content;
 }
 
 .navbar__ul--list li {
@@ -622,7 +646,8 @@
 }
 
 .img2 {
-  background-image: url(../src/assets/IMG-20230829-WA0003.jpg);
+  background-image: url(../src/assets/IMG-20230829-WA0002.jpg);
+  background-position: end center;
 }
 
 .borderIMG2 {
@@ -700,12 +725,16 @@
   background-image: url(../src/assets/OIP.jpg);
   width: 80%;
   height: 40px;
+  position: relative;
+  top: 0px;
 }
 
 .opi {
   background-image: url(../src/assets/OPI_logo_logotype_black.png);
   width: 80%;
   height: 40px;
+  position: relative;
+  top: 0px;
 }
 
 
@@ -790,8 +819,23 @@
 
 .imgFondoContact {
   background-image: url(./assets/IMG-20230829-WA0001.jpg);
+  position: relative;
 }
 
+.imgFondoContact::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to bottom,
+      transparent 10%,
+      transparent 80%,
+      var(--main-bg-color, 0.2) 90%,
+      var(--main-bg-color, 0.8) 100%);
+}
 
 /* =============================================== 
 
@@ -1096,4 +1140,16 @@
   width: 90vw;
   height: 300px;
   z-index: 10;
+}
+
+
+.biotherapy {
+  background-color: #000;
+  height: 50px;
+  font-weight: 400;
+  font-size: 35px;
+  width: 100%;
+  position: relative;
+  top: -5px;
+  text-align: center;
 }

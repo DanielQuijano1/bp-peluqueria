@@ -38,6 +38,7 @@ function Servicios() {
                     <Marcas className="marcaImagen loreal" />
                     <Marcas className="marcaImagen inoa" />
                     <Marcas className="marcaImagen opi" />
+                    <div className="biotherapy fontMontserrat"> <font color="#73b504">Bio</font>Therapy</div>
                 </Carousel>
             </section>
         </>
