@@ -188,6 +188,10 @@
   border-radius: 20px;
 }
 
+.bordersTop{
+  border-radius: 20px 20px 0px 0px;
+}
+
 .fontMontserrat {
   font-family: 'Montserrat', sans-serif;
 }
@@ -241,7 +245,7 @@
 }
 
 .backgroundTitle {
-  background-color: #fdf0f1c5;
+  background-color: #fdf0f1d0;
 }
 
 /* =============================================== 
@@ -288,7 +292,7 @@
 }
 
 .background_title {
-  background-color: #fdf0f12d;
+  background-color: #fdf0f19c;
   box-shadow: 0 0 10px #605c5c6c;
 }
 
@@ -814,12 +818,13 @@
 }
 
 .boxContact {
-  background-color: #5e5e5e;
+  background-color: #f0f0f0d0;
 }
 
 .imgFondoContact {
   background-image: url(./assets/IMG-20230829-WA0001.jpg);
   position: relative;
+  transition: .5s;
 }
 
 .imgFondoContact::before {
@@ -833,7 +838,7 @@
     linear-gradient(to bottom,
       transparent 10%,
       transparent 80%,
-      var(--main-bg-color, 0.2) 90%,
+      var(--main-bg-color, 0.2) 85%,
       var(--main-bg-color, 0.8) 100%);
 }
 
@@ -906,8 +911,8 @@
 
   .menuDropdown {
     position: relative;
-    width: 8c4445160px;
-    height: 8c4445160px;
+    width: 860px;
+    height: 860px;
     cursor: pointer;
     display: flex;
     justify-content: center;
