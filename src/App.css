@@ -248,7 +248,7 @@
 }
 
 .backgroundTitle {
-  background-color: #fdf0f1d0;
+  background-color: var(--main-bg-color);
 }
 
 /* =============================================== 
@@ -809,6 +809,23 @@
 .marcasTexto {
   font-weight: 400;
 }
+
+
+/* =============================================== 
+
+---------------- Pagina Services -------------------
+
+================================================*/
+.flexServicios{
+  height: 200px;
+}
+
+.cardServicio{
+  height: 100%;
+  width: 1fr;
+  background-color: #313131;
+}
+
 
 
 /* =============================================== 
