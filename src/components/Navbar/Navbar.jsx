@@ -63,9 +63,7 @@ function Navbar({ windowsSize }) {
                             <NavLink to="/about"><li className="textoRosaClaro letterSpacing animacionActive"> Sobre Nosotros</li></NavLink>
                             <NavLink to="/services"><li className="textoRosaClaro letterSpacing animacionActive"> Servicios</li></NavLink>
                             <NavLink to="/contact"><li className="textoRosaClaro letterSpacing animacionActive"> Contáctanos</li></NavLink>
-                            <li className="letterSpacing textoGrisOscuro">
-                                Idioma:
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>

@@ -5,7 +5,13 @@ function Contact({ windowsSize }) {
     return (
         <>
             <div className="width100vw widthTitle imgFondoContact centrarGrid ">
+                {windowsSize > 700 ?
                 <h1 className="textoGrisOscuro textoGrisClaro paddingTitle textoCentrado backgroundTitle bordersTop">Cómo Encontrarnos</h1>
+                :
+                <h1 className="textoGrisOscuro textoGrisClaro paddingTitle textoCentrado backgroundTitle bordersTop ">Cómo Encontrarnos</h1>
+                
+                }
+                
             </div>
             <div className="width100vw centrarGridCentro">
                 <div className="displayFlex flexDirectionColumn spaceAround gap1em">
