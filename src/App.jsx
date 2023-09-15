@@ -28,6 +28,7 @@ function App() {
     };
   });
 
+  console.log(windowsSize)
 
   return (
     <div className='html'>

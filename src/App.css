@@ -135,7 +135,10 @@
 
 .padding10 {
   padding: 10px;
+}
 
+.paddingTitle{
+  padding: 15px 40px;
 }
 
 .animacionActive:active {
@@ -842,6 +845,10 @@
       var(--main-bg-color, 0.8) 100%);
 }
 
+.mapaGoogle{
+  width: 90vw;
+  height: 400px;
+}
 /* =============================================== 
 
 ---------------- MEDIA QUERIES -------------------
@@ -911,8 +918,8 @@
 
   .menuDropdown {
     position: relative;
-    width: 860px;
-    height: 860px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     display: flex;
     justify-content: center;
