@@ -1222,6 +1222,9 @@
     width: 100%;
   }
 
+  .flexDirectionRow{
+    flex-direction: column;
+  }
 }
 
 
