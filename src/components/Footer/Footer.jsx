@@ -30,6 +30,7 @@ function Footer() {
                     </div>
                 </section>
             </div>
+            <div className="heigth3em"></div>
             <div className="footer__marcaDeAgua width80vw textoMarcaDeAgua textoCentrado letterSpacing fontMontserrat">
                 &#169; beautyport 2023. Todos los derechos reservados.
             </div>

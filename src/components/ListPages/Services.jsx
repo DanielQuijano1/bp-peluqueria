@@ -1,5 +1,5 @@
 import "./../../App.css"
-import Marcas from "./../Main/flexServicios/Marcas";
+import Card from "../Card/Card";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -34,22 +34,43 @@ function Services() {
             <div className="width100vw widthTitle imgFondoContact centrarGrid">
                 <h1 className="textoGrisClaro paddingTitle textoCentrado backgroundTitle bordersTop">Nuestros Servicios</h1>
             </div>
-            <section className="textoCentrado textoGrisOscuro">
-                <h1>Peluquería</h1>
-                <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
-                    <Marcas className=" cardServicio " />
-                    <Marcas className=" cardServicio " />
-                    <Marcas className=" cardServicio " />
-                    <Marcas className=" cardServicio " />
-                    <Marcas className=" cardServicio " />
-                </Carousel>
-            </section>
-            <section className="textoCentrado textoGrisOscuro">
-                <h1>Spa de Pies</h1>
-            </section>
-            <section className="textoCentrado textoGrisOscuro">
-                <h1>Spa de Manos</h1>
-            </section>
+            <div className="displayFlex flexDirectionColumn gap3em">
+                <section className="textoCentrado textoGrisOscuro">
+                    <h1>Peluquería</h1>
+                    <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} autoPlaySpeed={3000}>
+                        <Card> </Card>
+                        <Card> </Card>
+                        <Card> </Card>
+                        <Card> </Card>
+                        <Card> </Card>
+                        <Card> </Card>
+                    </Carousel>
+                </section>
+
+                <section className="textoCentrado textoGrisOscuro displayFlex flexDirectionColumn width80vw">
+                    <h1>Spa de Pies</h1>
+                    <div className="displayFlex flexDirectionRow gap1em width80vw spaceAround ">
+                        <div className="centrarGridCentro foto textoRosaClaro width40p">foto</div>
+                        <div className="width40p">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium earum quibusdam, labore quas rem possimus voluptate necessitatibus magnam perspiciatis, dolor nam harum delectus adipisci molestias quisquam in laudantium vero aliquid!</p>
+                            <button className="animacionActive animacionHover"> + VER MAS</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="textoCentrado textoGrisOscuro displayFlex flexDirectionColumn width80vw">
+                    <h1>Spa de Manos</h1>
+                    <div className="displayFlex flexDirectionRow gap1em width80vw spaceAround">
+                        <div className="width40p">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium earum quibusdam, labore quas rem possimus voluptate necessitatibus magnam perspiciatis, dolor nam harum delectus adipisci molestias quisquam in laudantium vero aliquid!</p>
+                            <button className="animacionActive animacionHover"> + VER MAS</button>
+                        </div>
+                        <div className="centrarGridCentro foto textoRosaClaro width40p">foto</div>
+                    </div>
+                </section>
+
+                <div></div>
+            </div>
         </>
     )
 }
