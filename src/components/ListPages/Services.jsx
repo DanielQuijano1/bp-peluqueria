@@ -2,17 +2,20 @@ import "./../../App.css"
 import Card from "../Card/Card";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { obtenerServicioPorCategoria, obtenerServicios } from "../../services";
 
 
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        items: 3
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3,
+        items: 2,
         slidesToSlide: 1 // optional, default to 1.
     },
     tablet: {
@@ -22,13 +25,43 @@ const responsive = {
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 2,
+        items: 1,
         slidesToSlide: 1 // optional, default to 1.
     }
 };
 
 
 function Services() {
+
+
+    const [servicios, setServicios] = useState([]);
+    const [isLoading, setIsLoading] = useState(true)
+    const [textoAlerta, setTextoAlerta] = useState()
+
+    let categoryid = useParams().categoryid;
+
+    useEffect(() => {
+        if (!categoryid) {
+            obtenerServicios()
+                .then((respuesta) => {
+                    setServicios(respuesta)
+                    setIsLoading(false)
+                    setTextoAlerta("Items cargados correctamente")
+                })
+                .catch((error) => {
+                    setTextoAlerta(error)
+                })
+                .finally(() => setIsLoading(false))
+        }
+        else {
+            obtenerServicioPorCategoria(categoryid).then((respuesta) => {
+                setServicios(respuesta)
+                setIsLoading(False)
+            })
+                .finally(() => setIsLoading(false))
+        }
+    }, [categoryid]);
+
     return (
         <>
             <div className="width100vw widthTitle imgFondoContact centrarGrid">
@@ -37,14 +70,13 @@ function Services() {
             <div className="displayFlex flexDirectionColumn gap3em">
                 <section className="textoCentrado textoGrisOscuro">
                     <h1>Peluquería</h1>
-                    <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} autoPlaySpeed={3000}>
-                        <Card> </Card>
-                        <Card> </Card>
-                        <Card> </Card>
-                        <Card> </Card>
-                        <Card> </Card>
-                        <Card> </Card>
-                    </Carousel>
+                    {isLoading ?
+                        <div></div>
+                        :
+                        <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} autoPlaySpeed={4000}>
+                            {servicios.map((item) => <Card key={item.id} item={item} />)}
+                        </Carousel>
+                    }
                 </section>
 
                 <section className="textoCentrado textoGrisOscuro displayFlex flexDirectionColumn width80vw">
