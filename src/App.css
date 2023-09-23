@@ -81,9 +81,10 @@
   background-color: #f2efe4bd;
 }
 
-.foto{
+.foto {
   background-color: #605c5c;
 }
+
 /*...............alineacion...........*/
 .textoCentrado {
   text-align: center;
@@ -95,11 +96,11 @@
   justify-content: center;
 }
 
-.positionRelative{
+.positionRelative {
   position: relative;
 }
 
-.positionAbsolute{
+.positionAbsolute {
   position: absolute;
 }
 
@@ -130,7 +131,7 @@
 }
 
 .spaceAround {
-  justify-content: space-around 
+  justify-content: space-around
 }
 
 .spaceBetween {
@@ -141,17 +142,18 @@
   justify-content: space-evenly;
 }
 
-.justifyContentCenter{
+.justifyContentCenter {
   justify-content: center;
 }
 
-.justifyContentEnd{
+.justifyContentEnd {
   justify-content: end;
 }
 
-.alignItemsEnd{
+.alignItemsEnd {
   align-items: end;
 }
+
 /* ......... paddings y margins ............*/
 .padding1em {
   padding: 1em;
@@ -161,7 +163,7 @@
   padding: 10px;
 }
 
-.paddingTitle{
+.paddingTitle {
   padding: 15px 40px;
 }
 
@@ -177,11 +179,11 @@
   gap: 1em
 }
 
-.gap3em{
+.gap3em {
   gap: 3em
 }
 
-.gap5em{
+.gap5em {
   gap: 5em
 }
 
@@ -189,7 +191,7 @@
   border-radius: 20px;
 }
 
-.bordersTop{
+.bordersTop {
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -208,7 +210,7 @@
   width: 100%;
 }
 
-.width40p{
+.width40p {
   width: 40%
 }
 
@@ -216,28 +218,28 @@
   height: 250px;
 }
 
-.width30p{
-  width : 30%;
+.width30p {
+  width: 30%;
 }
 
 .heigth100vh {
   height: 100vh;
 }
 
-.height360px{
+.height360px {
   height: 350px
 }
 
-.heigth3em{
-  height: 3em 
+.heigth3em {
+  height: 3em
 }
 
-.heigth300px{
+.heigth300px {
   height: 300px;
 }
 
-.heigth100p{
-  height: 100% ;
+.heigth100p {
+  height: 100%;
 }
 
 /* .............. animaciones ............*/
@@ -877,27 +879,28 @@
 ---------------- Pagina Services -------------------
 
 ================================================*/
-.flexServicios{
+.flexServicios {
   height: 300px;
 }
 
-.cardServicio{
+.cardServicio {
   width: 95%;
   height: 240px;
   background-color: var(--main-bg-color);
-  box-shadow: 0px 5px 5px #858484a2;
+  box-shadow: 0px 2px 5px #858484a2;
 }
 
-.imgCard{
+.imgCard {
   height: 160px;
   width: 100%;
 }
 
 
-.positionImgCard{
+.positionImgCard {
   top: -10%;
-  
+
 }
+
 /* =============================================== 
 
 ---------------- Pagina Contact -------------------
@@ -912,7 +915,7 @@
 }
 
 .imgFondoContact {
-  background: url(./assets/IMG-20230829-WA0001.jpg) no-repeat center ;
+  background: url(./assets/IMG-20230829-WA0001.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   transition: .5s;
@@ -933,12 +936,12 @@
       var(--main-bg-color, 0.8) 100%);
 }
 
-.mapaGoogle{
+.mapaGoogle {
   width: 40vw;
   height: 360px;
 }
 
-.bi{
+.bi {
   bottom: 5px;
   left: -25px;
 }
@@ -950,14 +953,14 @@
 ================================================*/
 
 @media screen and (max-width: 767px) {
-/* --------------------------
+  /* --------------------------
 .......... ALL ............
 ----------------------------*/
 
-.paddingTitle{
-  padding: 10px 20px 50px;
-  font-size: 35px;
-}
+  .paddingTitle {
+    padding: 10px 20px 50px;
+    font-size: 35px;
+  }
 
 
   /* --------------------------
@@ -1213,10 +1216,11 @@
     width: 90vw;
   }
 
-  .mapaGoogle{
+  .mapaGoogle {
     width: 100%;
     padding-bottom: 1em;
   }
+
   /* --------------------------
 ..........footer............
 ----------------------------*/
@@ -1248,7 +1252,7 @@
     width: 100%;
   }
 
-  .flexDirectionRow{
+  .flexDirectionRow {
     flex-direction: column;
   }
 }
@@ -1264,6 +1268,16 @@
   z-index: 10;
 }
 
+.react-multi-carousel-dot {
+  padding-top: 50px;
+  margin-left: 20px;
+}
+
+.react-multi-carousel-dot button {
+  border-style:transparent;
+}
+
+
 
 .biotherapy {
   background-color: #000;
@@ -1276,10 +1290,10 @@
   text-align: center;
 }
 
-.biotherapy::before{
-  content:'permanent color dream';
+.biotherapy::before {
+  content: 'permanent color dream';
   position: absolute;
-  top: 5px ;
+  top: 5px;
   left: 48%;
   font-size: 9px;
 }

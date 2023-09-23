@@ -5,6 +5,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { obtenerServicioPorCategoria, obtenerServicios } from "../../services";
+import CardEsqueleto from "../Card/CardEsqueleto";
 
 
 const responsive = {
@@ -69,11 +70,18 @@ function Services() {
             </div>
             <div className="displayFlex flexDirectionColumn gap3em">
                 <section className="textoCentrado textoGrisOscuro">
-                    <h1>Peluquería</h1>
                     {isLoading ?
-                        <div></div>
+                        <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} showDots={true} autoPlaySpeed={5000}>
+                            <CardEsqueleto />
+                            <CardEsqueleto />
+                            <CardEsqueleto />
+                            <CardEsqueleto />
+                            <CardEsqueleto />
+                            <CardEsqueleto />
+                            <CardEsqueleto />
+                        </Carousel>
                         :
-                        <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} autoPlaySpeed={4000}>
+                        <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} showDots={true} autoPlaySpeed={5000}>
                             {servicios.map((item) => <Card key={item.id} item={item} />)}
                         </Carousel>
                     }
