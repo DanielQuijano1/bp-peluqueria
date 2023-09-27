@@ -32,7 +32,7 @@ function Servicios() {
         <>
             
             <section className="fondoNegro width100vw">
-                <h2 className="marcasTexto fontMontserrat textoCentrado"><Balancer className="fontOswald letterSpacing">Trabajan con Nosotros</Balancer> </h2>
+                <h2 className="marcasTexto textoCentrado"><Balancer className="fontWeight500 letterSpacing">TRABAJAN CON NOSOTROS</Balancer> </h2>
                 <Carousel className="flex__marcas" responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={1500} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
                     <Marcas className="marcaImagen kerastase" />
                     <Marcas className="marcaImagen loreal" />
