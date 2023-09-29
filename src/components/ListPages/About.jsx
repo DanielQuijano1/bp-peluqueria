@@ -1,7 +1,7 @@
 import Balancer from "react-wrap-balancer"
 import "./../../App.css"
 
-function About({windosSize}) {
+function About({ windosSize }) {
     return (
         <>
 
@@ -14,10 +14,15 @@ function About({windosSize}) {
                     <div className="foto heigth300px centrarGridCentro">
                         <div className="textoRosaClaro">foto pelu</div>
                     </div>
-                    <Balancer className="textoCentrado ">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus labore, eveniet ipsum fugiat amet cupiditate consequatur illo eius nihil. Veniam, possimus earum impedit eius ipsum est accusamus voluptas vitae iste.
-                        Hic nam, provident tempora aliquid assumenda necessitatibus perferendis sapiente suscipit unde reiciendis ipsam nihil odio eligendi, explicabo eaque qui! Ullam error beatae voluptatum delectus! Aut numquam temporibus alias? Quos, quas.
-                    </Balancer>
+                    <div className="displayGrid centrarGridCentro">
+                        <Balancer className="textoCentrado ">
+                            Fundada con la visión de marcar una diferencia en la industria de la belleza, beautyport es el resultado de un sueño compartido por un equipo apasionado y comprometido con la responsabilidad medioambiental.
+                            <br /> <br />
+                            Nuestra dedicación hacia lo natural y ecológico se refleja en cada detalle de nuestras prácticas y servicios.
+                            <br /> <br />
+                            Al unir la elegancia con el respeto por la naturaleza, ofrecemos una experiencia de peluquería que cuida de tu estilo y del mundo.
+                        </Balancer>
+                    </div>
                 </div>
 
                 <section className="width80vw displayFlex flexDirectionRow textoGrisOscuro gap1em heigth300px">

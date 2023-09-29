@@ -4,17 +4,7 @@ import { Balancer } from "react-wrap-balancer"
 function Main({ windowsSize }) {
     return (
         <>
-            <div className="main__flex" id="SobreNosotros">
-                <p className="textoGrisClaro textoCentrado espaciadoVH">
-                    <Balancer className="widthYheigth100 fontSize18px">
-                        Fundada con la visión de marcar una diferencia en la industria de la belleza, beautyport es el resultado de un sueño compartido por un equipo apasionado y comprometido con la responsabilidad medioambiental.
-                        <br /> <br />
-                        Nuestra dedicación hacia lo natural y ecológico se refleja en cada detalle de nuestras prácticas y servicios.
-                        <br /> <br />
-                        Al unir la elegancia con el respeto por la naturaleza, ofrecemos una experiencia de peluquería que cuida de tu estilo y del mundo.
-                    </Balancer>
-                </p>
-            </div>
+            
 
             {windowsSize > 800 ?
                 <section className="main_section ">
