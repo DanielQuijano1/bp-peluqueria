@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { obtenerServicioPorCategoria, obtenerServicios } from "../../services";
 import CardEsqueleto from "../Card/CardEsqueleto";
+import Balancer from "react-wrap-balancer";
 
 
 const responsive = {
@@ -32,7 +33,8 @@ const responsive = {
 };
 
 
-function Services() {
+
+function Services({ windowsSize }) {
 
 
     const [servicios, setServicios] = useState([]);
@@ -81,18 +83,31 @@ function Services() {
                             <CardEsqueleto />
                         </Carousel>
                         :
-                        <Carousel className="width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} showDots={true} autoPlaySpeed={5000}>
+                        windowsSize > 700 ?
+
+                        <Carousel className="marginLeft10p width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} showDots={true} autoPlaySpeed={5000}>
+                            {servicios.map((item) => <Card key={item.id} item={item} />)}
+                        </Carousel>
+                        :
+                        <Carousel className="marginLeft10p width80vw flexServicios " responsive={responsive} infinite={true} autoPlay={true} centerMode={false} showDots={true} autoPlaySpeed={5000}>
                             {servicios.map((item) => <Card key={item.id} item={item} />)}
                         </Carousel>
                     }
                 </section>
 
-                <section className="textoCentrado textoGrisOscuro displayFlex flexDirectionColumn width80vw">
+                <section className="textoCentrado textoGrisOscuro displayFlex flexDirectionColumn width8100vw">
                     <h1>Spa de Pies</h1>
-                    <div className="displayFlex flexDirectionRow gap1em width80vw spaceAround ">
-                        <div className="centrarGridCentro foto textoRosaClaro width40p">foto</div>
+                    <div className="displayFlex flexDirectionRow gap1em width100vw spaceAround ">
+                        <div className="displayGrid centrarGridCentro">
+                            {windowsSize < 700 ? <div className="main__img img4 borderIMG1" /> : <div className="main__img img4" />}
+                        </div>
                         <div className="width40p">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium earum quibusdam, labore quas rem possimus voluptate necessitatibus magnam perspiciatis, dolor nam harum delectus adipisci molestias quisquam in laudantium vero aliquid!</p>
+                            <Balancer>
+                                <h2>Sumérgete en un oasis de relajación con nuestro exclusivo Spa de Pies</h2>
+                                <p>Nuestros <b> tratamientos terapéuticos y rejuvenecedores </b> son la receta perfecta para aliviar la fatiga y revitalizar tus pies.</p>
+                                <p>Experimenta la <b> serenidad </b> mientras nuestros expertos cuidan de tu bienestar, elevando tu <b> comodidad </b> a un nivel inigualable.</p>
+
+                            </Balancer>
                             <button className="animacionActive animacionHover"> + VER MAS</button>
                         </div>
                     </div>
@@ -101,11 +116,25 @@ function Services() {
                 <section className="textoCentrado textoGrisOscuro displayFlex flexDirectionColumn width80vw">
                     <h1>Spa de Manos</h1>
                     <div className="displayFlex flexDirectionRow gap1em width80vw spaceAround">
+                        {windowsSize < 700 ?
+                            <div className="displayGrid centrarGridCentro">
+                                <div className="main__img img5 borderIMG1" />
+                            </div>
+                            :
+                            <></>}
                         <div className="width40p">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium earum quibusdam, labore quas rem possimus voluptate necessitatibus magnam perspiciatis, dolor nam harum delectus adipisci molestias quisquam in laudantium vero aliquid!</p>
+                            <h2>Adéntrate en el mundo del lujo con nuestro Spa de Manos </h2>
+                            <p> Nuestros tratamientos expertos transformarán tus manos, dejándolas <b> suaves, radiantes y rejuvenecidas </b></p>
+                            <p> Desde manicuras clásicas hasta terapias de <b> hidratación profunda</b>, cada detalle se cuida con mimo para resaltar tu belleza natural </p>
+                            <p> Sumérgete en la indulgencia y cuidado personal </p>
+
                             <button className="animacionActive animacionHover"> + VER MAS</button>
                         </div>
-                        <div className="centrarGridCentro foto textoRosaClaro width40p">foto</div>
+                        {windowsSize > 700 ?
+                            <div className="displayGrid centrarGridCentro">
+                                <div className="main__img img5 borderIMG1" />
+                            </div>
+                            : <></>}
                     </div>
                 </section>
 

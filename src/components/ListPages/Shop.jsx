@@ -9,7 +9,7 @@ export default function Shop() {
 
             
             <div className="width100vw heigth100vh centrarGridCentro">
-                <h1 className="textoGrisOscuro letterSpacing"> PRÓXIMAMENTE </h1>
+                <h1 className="textoGrisOscuro letterSpacing fontMobil"> PRÓXIMAMENTE </h1>
             </div>
         </>
     )

@@ -1,7 +1,7 @@
 import Balancer from "react-wrap-balancer"
 import "./../../App.css"
 
-function About({ windosSize }) {
+function About({ windowsSize }) {
     return (
         <>
 

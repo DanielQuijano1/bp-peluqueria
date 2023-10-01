@@ -195,6 +195,9 @@
   border-radius: 20px 20px 0px 0px;
 }
 
+.marginLeft10p{
+  margin-left: 2%;
+}
 
 /* .............. widths y heiths .............*/
 
@@ -901,6 +904,14 @@
 
 }
 
+.img4{
+background-image: url("/src/assets/pexels-rdne-stock-project-PATAS.jpg");
+}
+
+.img5{
+background-image: url("/src/assets/pexels-rdne-stock-project-MANUELAS.jpg");
+}
+
 /* =============================================== 
 
 ---------------- Pagina Contact -------------------
@@ -962,6 +973,17 @@
     font-size: 35px;
   }
 
+  .fontMobil {
+    font-size: 35px;
+  }
+
+  .width80vw{
+    width: 100vw;
+  }
+
+  .width40p{
+    width: 100%;
+  }
 
   /* --------------------------
 ..........navbar............
@@ -1002,7 +1024,7 @@
     padding-bottom: 5px;
     background: #fff;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 10000;
   }
 
 
@@ -1213,11 +1235,11 @@
 
   /*  ---  servicios ---  */
   .flex__marcas {
-    width: 90vw;
+    width: 100vw;
   }
 
   .mapaGoogle {
-    width: 100%;
+    width: 100vw;
     padding-bottom: 1em;
   }
 
@@ -1274,7 +1296,7 @@
 }
 
 .react-multi-carousel-dot button {
-  border-style:transparent;
+  border-style: transparent;
 }
 
 
