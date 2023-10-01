@@ -85,13 +85,13 @@ function Services({ windowsSize }) {
                         :
                         windowsSize > 700 ?
 
-                        <Carousel className="marginLeft10p width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} showDots={true} autoPlaySpeed={5000}>
-                            {servicios.map((item) => <Card key={item.id} item={item} />)}
-                        </Carousel>
-                        :
-                        <Carousel className="marginLeft10p width80vw flexServicios " responsive={responsive} infinite={true} autoPlay={true} centerMode={false} showDots={true} autoPlaySpeed={5000}>
-                            {servicios.map((item) => <Card key={item.id} item={item} />)}
-                        </Carousel>
+                            <Carousel className="marginLeft10p width80vw flexServicios" responsive={responsive} infinite={true} autoPlay={true} centerMode={true} showDots={true} autoPlaySpeed={5000}>
+                                {servicios.map((item) => <Card key={item.id} item={item} />)}
+                            </Carousel>
+                            :
+                            <Carousel className="marginLeft10p width80vw flexServicios " responsive={responsive} infinite={true} autoPlay={true} centerMode={false} showDots={true} autoPlaySpeed={5000}>
+                                {servicios.map((item) => <Card key={item.id} item={item} />)}
+                            </Carousel>
                     }
                 </section>
 
@@ -99,7 +99,11 @@ function Services({ windowsSize }) {
                     <h1>Spa de Pies</h1>
                     <div className="displayFlex flexDirectionRow gap1em width100vw spaceAround ">
                         <div className="displayGrid centrarGridCentro">
-                            {windowsSize < 700 ? <div className="main__img img4 borderIMG1" /> : <div className="main__img img4" />}
+                            {windowsSize < 700 ?
+                                <div className="main__img img4 borderIMG1" />
+                                :
+                                <div className="main__img img4" />
+                            }
                         </div>
                         <div className="width40p">
                             <Balancer>
