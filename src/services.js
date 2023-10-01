@@ -1,14 +1,14 @@
 const servicios = [
     {
         id: 1,
-        img: "./src/assets/pexels-daniel-kondrashin-14615063.jpg",
+        img: "../src/assets/pexels-daniel-kondrashin-14615063.jpg",
         nombre: "alisado",
         detalle: "alisado de pelo",
         categoria: "peluqueria"
     },
     {
         id: 2,
-        img: "./src/assets/pexels-maria-geller-2799605.jpg",
+        img: "../src/assets/pexels-maria-geller-2799605.jpg",
         nombre: "color",
         detalle: "color de pelo",
         categoria: "peluqueria"
