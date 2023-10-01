@@ -1,49 +1,49 @@
 const servicios = [
     {
         id: 1,
-        img: "/src/assets/pexels-daniel-kondrashin-14615063.jpg",
+        img: "./src/assets/pexels-daniel-kondrashin-14615063.jpg",
         nombre: "alisado",
         detalle: "alisado de pelo",
         categoria: "peluqueria"
     },
     {
         id: 2,
-        img: "/src/assets/pexels-maria-geller-2799605.jpg",
+        img: "./src/assets/pexels-maria-geller-2799605.jpg",
         nombre: "color",
         detalle: "color de pelo",
         categoria: "peluqueria"
     },
     {
         id: 3,
-        img: "/src/assets/pexels-engin-akyurt-3356170.jpg",
+        img: "./src/assets/pexels-engin-akyurt-3356170.jpg",
         nombre: "corte",
         detalle: "cortes de pelo",
         categoria: "peluqueria"
     },
     {
         id: 4,
-        img: "/src/assets/pexels-engin-akyurt-3331486.jpg",
+        img: "./src/assets/pexels-engin-akyurt-3331486.jpg",
         nombre: "Extensiones y cortinas",
         detalle: "extensiones y cortinas de pelo",
         categoria: "peluqueria"
     },
     {
         id: 5,
-        img: "/src/assets/pexels-rdne-stock-project-7755473.jpg",
+        img: "./src/assets/pexels-rdne-stock-project-7755473.jpg",
         nombre: "lavado y tratamientos",
         detalle: "lavado y tratamientos capilares",
         categoria: "peluqueria"
     },
     {
         id: 6,
-        img: "/src/assets/pexels-engin-akyurt-3065171.jpg",
+        img: "./src/assets/pexels-engin-akyurt-3065171.jpg",
         nombre: "peinado",
         detalle: "peinados personalizados",
         categoria: "peluqueria"
     },
     {
         id: 7,
-        img: "/src/assets/pexels-engin-akyurt-1435443.jpg",
+        img: "./src/assets/pexels-engin-akyurt-1435443.jpg",
         nombre: "pestañas",
         detalle: "pestañas esculpidas",
         categoria: "peluqueria"
